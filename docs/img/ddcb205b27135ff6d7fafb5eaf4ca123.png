@@ -1,0 +1,1511 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VgYPVlJUDBADVFJRBAgEU1E=",licenseKey:"608b2de9d6",applicationID:"303339355"};/*! For license information please see nr-loader-full-1220.min.js.LICENSE.txt */
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.NRBA=e():t.NRBA=e()}(self,(function(){return function(){var t,e,n={9034:function(t,e,n){"use strict";var r=n(4168);e.Z=(0,r.ky)(16)},5973:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1])},4280:function(t,e,n){"use strict";n.d(e,{H:function(){return i}});var r=document.createElement("div");r.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e";var i,o=r.getElementsByTagName("div").length;i=4===o?6:3===o?7:2===o?8:1===o?9:0},5955:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=function(t,e){var n=this;return t&&"object"==typeof t?e&&"object"==typeof e?(Object.assign(this,e),void Object.entries(t).forEach((function(t){var e=t[0],r=t[1];n[e]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}},441:function(t,e,n){"use strict";n.d(e,{C:function(){return c},L:function(){return u}});var r=n(1424),i=n(5955),o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function c(t){if(!t)throw new Error("All info objects require an agent identifier!");if(!a[t])throw new Error("Info for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All info objects require an agent identifier!");a[t]=new i.I(e,o),(0,r.Qy)(t,a[t],"info")}},1476:function(t,e,n){"use strict";n.d(e,{Dg:function(){return u},Mt:function(){return s},P_:function(){return c}});var r=n(1424),i=n(5955),o={privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},a={};function c(t){if(!t)throw new Error("All configuration objects require an agent identifier!");if(!a[t])throw new Error("Configuration for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");a[t]=new i.I(e,o),(0,r.Qy)(t,a[t],"config")}function s(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");var n=c(t);if(n){for(var r=e.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}},2085:function(t,e,n){"use strict";n.d(e,{Y:function(){return r}});var r=(0,n(1424).mF)().o},1220:function(t,e,n){"use strict";n.d(e,{O:function(){return b},s:function(){return O}});var r={};n.r(r),n.d(r,{agent:function(){return a},match:function(){return f},version:function(){return c}});var i=n(4280),o=n(6959),a=null,c=null;if(navigator.userAgent){var u=navigator.userAgent,s=u.match(/Version\/(\S+)\s+Safari/);s&&-1===u.indexOf("Chrome")&&-1===u.indexOf("Chromium")&&(a="Safari",c=s[1])}function f(t,e){if(!a)return!1;if(t!==a)return!1;if(!e)return!0;if(!c)return!1;for(var n=c.split("."),r=e.split("."),i=0;i<r.length;i++)if(r[i]!==n[i])return!1;return!0}var d=n(5955),l=n(1424),p=n(4168),h=window.sessionStorage,v="NRBA_SESSION_ID";var g=n(1476),m=window.XMLHttpRequest,y=m&&m.prototype,w={};function b(t){if(!t)throw new Error("All runtime objects require an agent identifier!");if(!w[t])throw new Error("Runtime for "+t+" was never set");return w[t]}function O(t,e){if(!t)throw new Error("All runtime objects require an agent identifier!");var n,a;w[t]=new d.I(e,(n=t,{customTransaction:void 0,disabled:!1,features:{},maxBytes:6===i.H?2e3:3e4,offset:(0,o.yf)(),onerror:void 0,origin:""+window.location,ptid:void 0,releaseIds:{},sessionId:!0===(0,g.Mt)(n,"privacy.cookies_enabled")?(null===(a=h.getItem(v))&&(a=(0,p.ky)(16),h.setItem(v,a)),a):"0",xhrWrappable:m&&y&&y.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:r})),(0,l.Qy)(t,w[t],"runtime")}},158:function(t,e,n){"use strict";n.d(e,{q:function(){return r}});var r=["1220","PROD"].filter((function(t){return t})).join(".")},3707:function(t,e,n){"use strict";n.d(e,{w:function(){return i}});var r={agentIdentifier:""},i=function(t){var e=this;if("object"!=typeof t)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,r),Object.entries(t).forEach((function(t){var n=t[0],i=t[1];Object.keys(r).includes(n)&&(e.sharedContext[n]=i)}))}},1776:function(t,e,n){"use strict";n.d(e,{ee:function(){return r}});var r,i=n(1424),o=n(4217),a=n(357),c="nr@context",u=(0,i.fP)();function s(){}function f(){return new s}function d(){(r.backlog.api||r.backlog.feature)&&(r.aborted=!0,r.backlog={})}u.ee?r=u.ee:(r=function t(e,n){var i={},u={},l={},p={on:g,addEventListener:g,removeEventListener:m,emit:v,get:w,listeners:y,context:h,buffer:b,abort:d,aborted:!1,isBuffering:O,debugId:n,backlog:e&&e.backlog?e.backlog:{}};return p;function h(t){return t&&t instanceof s?t:t?(0,o.X)(t,c,f):f()}function v(t,n,i,o,a){if(!1!==a&&(a=!0),!r.aborted||o){e&&a&&e.emit(t,n,i);for(var c=h(i),s=y(t),f=s.length,d=0;d<f;d++)s[d].apply(c,n);var l=x()[u[t]];return l&&l.push([p,t,n,c]),c}}function g(t,e){i[t]=y(t).concat(e)}function m(t,e){var n=i[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function y(t){return i[t]||[]}function w(e){return l[e]=l[e]||t(p,e)}function b(t,e){var n=x();p.aborted||(0,a.D)(t,(function(t,r){e=e||"feature",u[r]=e,e in n||(n[e]=[])}))}function O(t){return!!x()[u[t]]}function x(){return p.backlog}}(void 0,"globalEE"),u.ee=r)},7361:function(t,e,n){"use strict";n.d(e,{E:function(){return r},p:function(){return i}});var r=n(1776).ee.get("handle");function i(t,e,n,i,o){o?(o.buffer([t],i),o.emit(t,e,n)):(r.buffer([t],i),r.emit(t,e,n))}},3350:function(t,e,n){"use strict";n.d(e,{X:function(){return o}});var r=n(7361);o.on=a;var i=o.handlers={};function o(t,e,n,o){a(o||r.E,i,t,e,n)}function a(t,e,n,i,o){o||(o="feature"),t||(t=r.E);var a=e[o]=e[o]||{};(a[n]=a[n]||[]).push([t,i])}},4408:function(t,e,n){"use strict";n.d(e,{m:function(){return o}});var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(t){}function o(t){return r?{passive:!0,capture:!!t}:!!t}},4168:function(t,e,n){"use strict";function r(){var t=null,e=0,n=window.crypto||window.msCrypto;function r(){return t?15&t[e++]:16*Math.random()|0}n&&n.getRandomValues&&(t=n.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)a+="x"===(i=o[c])?r().toString(16):"y"===i?(i=3&r()|8).toString(16):i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var i=[],o=0;o<t;o++)i.push(a().toString(16));return i.join("");function a(){return e?15&e[n++]:16*Math.random()|0}}n.d(e,{Ht:function(){return o},M:function(){return i},Rl:function(){return r},ky:function(){return a}})},6959:function(t,e,n){"use strict";n.d(e,{nb:function(){return u},os:function(){return s},yf:function(){return c},zO:function(){return a}});var r=n(2364),i=(new Date).getTime(),o=i;function a(){return r.G&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-o}function c(){return i}function u(t){o=t}function s(){return o}},2364:function(t,e,n){"use strict";n.d(e,{G:function(){return r}});var r=void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart},1793:function(t,e,n){"use strict";function r(t){var e,n=0;for(e=0;e<t.length;e++)n+=(e+1)*t.charCodeAt(e);return Math.abs(n)}n.d(e,{v:function(){return s},s:function(){return u}});var i=n(6972),o=n(5973),a=n(6959),c=n(2364),u=!0;function s(t){var e=function(){if(o.I&&o.I<9)return;if(c.G)return u=!1,window.performance.timing.navigationStart}()||function(){for(var t=document.cookie.split(" "),e=0;e<t.length;e++)if(0===t[e].indexOf("NREUM=")){for(var n,i,o,a,c=t[e].substring("NREUM=".length).split("&"),u=0;u<c.length;u++)0===c[u].indexOf("s=")?o=c[u].substring(2):0===c[u].indexOf("p=")?";"===(i=c[u].substring(2)).charAt(i.length-1)&&(i=i.substr(0,i.length-1)):0===c[u].indexOf("r=")&&";"===(n=c[u].substring(2)).charAt(n.length-1)&&(n=n.substr(0,n.length-1));if(n){var s=r(document.referrer);(a=s==n)||(a=r(document.location.href)==n&&s==i)}if(a&&o){if((new Date).getTime()-o>6e4)return;return o}}}();e&&((0,i.B)(t,"starttime",e),(0,a.nb)(e))}},6972:function(t,e,n){"use strict";n.d(e,{B:function(){return o},L:function(){return a}});var r=n(6959),i={};function o(t,e,n){void 0===n&&(n=(0,r.zO)()+(0,r.os)()),i[t]=i[t]||{},i[t][e]=n}function a(t,e,n,r){var o,a,c=t.sharedContext.agentIdentifier,u=null==(o=i[c])?void 0:o[n],s=null==(a=i[c])?void 0:a[r];void 0!==u&&void 0!==s&&t.store("measures",e,{value:s-u})}},7001:function(t,e,n){"use strict";n.d(e,{e:function(){return i}});var r={};function i(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},7299:function(t,e,n){"use strict";n.d(e,{T:function(){return a}});var r=window,i=r;function o(){return i}var a={isFileProtocol:function(){var t=o(),e=!(!t.location||!t.location.protocol||"file:"!==t.location.protocol);e&&(a.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},847:function(t,e,n){"use strict";n.d(e,{K:function(){return a}});var r=n(1220),i=n(1476),o=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function a(t){var e={};return o.forEach((function(n){e[n]=function(t,e){return!0!==(0,r.O)(e).disabled&&!1!==(0,i.Mt)(e,t+".enabled")}(n,t)})),e}},5023:function(t,e,n){"use strict";n.d(e,{W:function(){return i}});var r=n(1776),i=function(t,e,n){void 0===n&&(n=[]),this.agentIdentifier=t,this.aggregator=e,this.ee=r.ee.get(t),this.externalFeatures=n}},4217:function(t,e,n){"use strict";n.d(e,{X:function(){return i}});var r=Object.prototype.hasOwnProperty;function i(t,e,n){if(r.call(t,e))return t[e];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:i,writable:!0,enumerable:!1}),i}catch(t){}return t[e]=i,i}},357:function(t,e,n){"use strict";n.d(e,{D:function(){return i}});var r=Object.prototype.hasOwnProperty;function i(t,e){var n=[],i="",o=0;for(i in t)r.call(t,i)&&(n[o]=e(i,t[i]),o+=1);return n}},603:function(t,e,n){"use strict";n.d(e,{$c:function(){return s},Ng:function(){return f},RR:function(){return u}});var r=n(1476),i=n(3707),o=n(7299);function a(t,e){return a=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},a(t,e)}var c={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"},u=function(t){var e,n;function r(e){return t.call(this,e)||this}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,a(e,n);var i=r.prototype;return i.shouldObfuscate=function(){return s(this.sharedContext.agentIdentifier).length>0},i.obfuscateString=function(t){if(!t||"string"!=typeof t)return t;for(var e=s(this.sharedContext.agentIdentifier),n=t,r=0;r<e.length;r++){var i=e[r].regex,o=e[r].replacement||"*";n=n.replace(i,o)}return n},r}(i.w);function s(t){var e=[],n=(0,r.Mt)(t,"obfuscate")||[];return e=e.concat(n),o.T.isFileProtocol()&&e.push(c),e}function f(t){for(var e=!1,n=!1,r=0;r<t.length;r++){"regex"in t[r]?"string"!=typeof t[r].regex&&t[r].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),n=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),n=!0);var i=t[r].replacement;i&&"string"!=typeof i&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),e=!0)}return!e&&!n}},1424:function(t,e,n){"use strict";n.d(e,{EZ:function(){return u},Qy:function(){return c},ce:function(){return i},fP:function(){return o},gG:function(){return s},mF:function(){return a}});var r=n(6959),i={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return window.NREUM||(window.NREUM={}),void 0===window.newrelic&&(window.newrelic=window.NREUM),window.NREUM}function a(){var t=o();if(!t.o){var e=window,n=e.XMLHttpRequest;t.o={ST:setTimeout,SI:e.setImmediate,CT:clearTimeout,XHR:n,REQ:e.Request,EV:e.Event,PR:e.Promise,MO:e.MutationObserver,FETCH:e.fetch}}return t}function c(t,e,n){var i,a,c=o(),u=c.initializedAgents||{},s=u[t]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.zO)(),date:new Date}),c.initializedAgents=Object.assign({},u,((a={})[t]=Object.assign({},s,((i={})[n]=e,i)),a)),c}function u(t,e){o()[t]=e}function s(){var t,e;return t=o(),e=t.info||{},t.info=Object.assign({beacon:i.beacon,errorBeacon:i.errorBeacon},e),function(){var t=o(),e=t.init||{};t.init=Object.assign({},e)}(),a(),function(){var t=o(),e=t.loader_config||{};t.loader_config=Object.assign({},e)}(),o()}},5098:function(t,e,n){"use strict";function r(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}n.d(e,{W:function(){return r}})},8539:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}},8118:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}}},r={};function i(t){var e=r[t];if(void 0!==e)return e.exports;var o=r[t]={exports:{}};return n[t](o,o.exports,i),o.exports}i.m=n,i.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return i.d(e,{a:e}),e},i.d=function(t,e){for(var n in e)i.o(e,n)&&!i.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},i.f={},i.e=function(t){return Promise.all(Object.keys(i.f).reduce((function(e,n){return i.f[n](t,e),e}),[]))},i.u=function(t){return t+"."+i.h().slice(0,8)+"-1220.js"},i.h=function(){return"2d6a2503b7f18a5b77dd"},i.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},t={},e="NRBA:",i.l=function(n,r,o,a){if(t[n])t[n].push(r);else{var c,u;if(void 0!==o)for(var s=document.getElementsByTagName("script"),f=0;f<s.length;f++){var d=s[f];if(d.getAttribute("src")==n||d.getAttribute("data-webpack")==e+o){c=d;break}}c||(u=!0,(c=document.createElement("script")).charset="utf-8",c.timeout=120,i.nc&&c.setAttribute("nonce",i.nc),c.setAttribute("data-webpack",e+o),c.src=n),t[n]=[r];var l=function(e,r){c.onerror=c.onload=null,clearTimeout(p);var i=t[n];if(delete t[n],c.parentNode&&c.parentNode.removeChild(c),i&&i.forEach((function(t){return t(r)})),e)return e(r)},p=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),u&&document.head.appendChild(c)}},i.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",function(){var t={908:0,172:0};i.f.j=function(e,n){var r=i.o(t,e)?t[e]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise((function(n,i){r=t[e]=[n,i]}));n.push(r[2]=o);var a=i.p+i.u(e),c=new Error;i.l(a,(function(n){if(i.o(t,e)&&(0!==(r=t[e])&&(t[e]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;c.message="Loading chunk "+e+" failed.\n("+o+": "+a+")",c.name="ChunkLoadError",c.type=o,c.request=a,r[1](c)}}),"chunk-"+e,e)}};var e=function(e,n){var r,o,a=n[0],c=n[1],u=n[2],s=0;if(a.some((function(e){return 0!==t[e]}))){for(r in c)i.o(c,r)&&(i.m[r]=c[r]);if(u)u(i)}for(e&&e(n);s<a.length;s++)o=a[s],i.o(t,o)&&t[o]&&t[o][0](),t[o]=0},n=self.webpackChunkNRBA=self.webpackChunkNRBA||[];n.forEach(e.bind(null,0)),n.push=e.bind(null,n.push.bind(n))}();var o={};return function(){"use strict";i.r(o);var t=i(9034),e=i(4408),n=window,r=n.document;function a(t){"complete"===r.readyState&&t()}function c(t){a(t),r.addEventListener?n.addEventListener("load",t,(0,e.m)(!1)):n.attachEvent("onload",t)}function u(t){a(t),r.addEventListener?r.addEventListener("DOMContentLoaded",t,(0,e.m)(!1)):r.attachEvent("onreadystatechange",a)}var s=i(1776);function f(){f=function(){return t};var t={},e=Object.prototype,n=e.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},i=r.iterator||"@@iterator",o=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,n){return t[e]=n}}function u(t,e,n,r){var i=e&&e.prototype instanceof l?e:l,o=Object.create(i.prototype),a=new j(r||[]);return o._invoke=function(t,e,n){var r="suspendedStart";return function(i,o){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===i)throw o;return P()}for(n.method=i,n.arg=o;;){var a=n.delegate;if(a){var c=O(a,n);if(c){if(c===d)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=s(t,e,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===d)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(t,n,a),o}function s(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var d={};function l(){}function p(){}function h(){}var v={};c(v,i,(function(){return this}));var g=Object.getPrototypeOf,m=g&&g(g(_([])));m&&m!==e&&n.call(m,i)&&(v=m);var y=h.prototype=l.prototype=Object.create(v);function w(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function b(t,e){function r(i,o,a,c){var u=s(t[i],t,o);if("throw"!==u.type){var f=u.arg,d=f.value;return d&&"object"==typeof d&&n.call(d,"__await")?e.resolve(d.__await).then((function(t){r("next",t,a,c)}),(function(t){r("throw",t,a,c)})):e.resolve(d).then((function(t){f.value=t,a(f)}),(function(t){return r("throw",t,a,c)}))}c(u.arg)}var i;this._invoke=function(t,n){function o(){return new e((function(e,i){r(t,n,e,i)}))}return i=i?i.then(o,o):o()}}function O(t,e){var n=t.iterator[e.method];if(void 0===n){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,O(t,e),"throw"===e.method))return d;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return d}var r=s(n,t.iterator,e.arg);if("throw"===r.type)return e.method="throw",e.arg=r.arg,e.delegate=null,d;var i=r.arg;return i?i.done?(e[t.resultName]=i.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,d):i:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,d)}function x(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function j(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(x,this),this.reset(!0)}function _(t){if(t){var e=t[i];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,o=function e(){for(;++r<t.length;)if(n.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return o.next=o}}return{next:P}}function P(){return{value:void 0,done:!0}}return p.prototype=h,c(y,"constructor",h),c(h,"constructor",p),p.displayName=c(h,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===p||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,h):(t.__proto__=h,c(t,a,"GeneratorFunction")),t.prototype=Object.create(y),t},t.awrap=function(t){return{__await:t}},w(b.prototype),c(b.prototype,o,(function(){return this})),t.AsyncIterator=b,t.async=function(e,n,r,i,o){void 0===o&&(o=Promise);var a=new b(u(e,n,r,i),o);return t.isGeneratorFunction(n)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},w(y),c(y,a,"Generator"),c(y,i,(function(){return this})),c(y,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},t.values=_,j.prototype={constructor:j,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&n.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(n,r){return a.type="throw",a.arg=t,e.next=n,r&&(e.method="next",e.arg=void 0),!!r}for(var i=this.tryEntries.length-1;i>=0;--i){var o=this.tryEntries[i],a=o.completion;if("root"===o.tryLoc)return r("end");if(o.tryLoc<=this.prev){var c=n.call(o,"catchLoc"),u=n.call(o,"finallyLoc");if(c&&u){if(this.prev<o.catchLoc)return r(o.catchLoc,!0);if(this.prev<o.finallyLoc)return r(o.finallyLoc)}else if(c){if(this.prev<o.catchLoc)return r(o.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<o.finallyLoc)return r(o.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var i=this.tryEntries[r];if(i.tryLoc<=this.prev&&n.call(i,"finallyLoc")&&this.prev<i.finallyLoc){var o=i;break}}o&&("break"===t||"continue"===t)&&o.tryLoc<=e&&e<=o.finallyLoc&&(o=null);var a=o?o.completion:{};return a.type=t,a.arg=e,o?(this.method="next",this.next=o.finallyLoc,d):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),d},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),E(n),d}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var i=r.arg;E(n)}return i}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:_(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=void 0),d}},t}function d(t,e,n,r,i,o,a){try{var c=t[o](a),u=c.value}catch(t){return void n(t)}c.done?e(u):Promise.resolve(u).then(r,i)}var l=0;function p(t){var e;(e=f().mark((function e(){var n,r;return f().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!l++){e.next=2;break}return e.abrupt("return");case 2:return e.prev=2,e.next=5,i.e(552).then(i.bind(i,5552));case 5:return n=e.sent,r=n.aggregator,e.next=9,r(t);case 9:e.next=15;break;case 11:e.prev=11,e.t0=e.catch(2),console.error("Failed to successfully load all aggregators. Aborting...\n",e.t0),s.ee.abort();case 15:case"end":return e.stop()}}),e,null,[[2,11]])})),function(){var t=this,n=arguments;return new Promise((function(r,i){var o=e.apply(t,n);function a(t){d(o,r,i,a,c,"next",t)}function c(t){d(o,r,i,a,c,"throw",t)}a(void 0)}))})()}var h=i(8539),v=i.n(h),g=i(1424),m=i(1220),y=i(441),w=i(7361),b=i(357),O=i(6959);var x=i(1476),E=i(5955),j={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},_={};function P(t){if(!t)throw new Error("All loader-config objects require an agent identifier!");if(!_[t])throw new Error("LoaderConfig for "+t+" was never set");return _[t]}var T=!1;var S=i(6972),L=i(1793),C=i(5023);function I(t,e){return I=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},I(t,e)}var A,R,k,H=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,L.v)(e),(0,S.B)(e,"firstbyte",(0,O.yf)()),c((function(){return n.measureWindowLoaded()})),u((function(){return n.measureDomContentLoaded()})),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,I(e,n);var i=r.prototype;return i.measureWindowLoaded=function(){var t=(0,O.zO)();(0,S.B)(this.agentIdentifier,"onload",t+(0,O.os)()),(0,w.p)("timing",["load",t],void 0,void 0,this.ee)},i.measureDomContentLoaded=function(){(0,S.B)(this.agentIdentifier,"domContent",(0,O.zO)()+(0,O.os)())},r}(C.W);void 0!==document.hidden?(A="hidden",R="visibilitychange",k="visibilityState"):void 0!==document.msHidden?(A="msHidden",R="msvisibilitychange"):void 0!==document.webkitHidden&&(A="webkitHidden",R="webkitvisibilitychange",k="webkitVisibilityState");var z=i(2085);function N(t,e){return N=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},N(t,e)}var M=function(t){var n,r;function i(n){var r,i;if((r=t.call(this,n)||this).pageHiddenTime="hidden"===document.visibilityState?-1:1/0,r.performanceObserver,r.lcpPerformanceObserver,r.clsPerformanceObserver,r.fiRecorded=!1,!r.isEnabled())return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){r.performanceObserver=new PerformanceObserver((function(){var t;return(t=r).perfObserver.apply(t,arguments)}));try{r.performanceObserver.observe({entryTypes:["paint"]})}catch(t){}r.lcpPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).lcpObserver.apply(t,arguments)}));try{r.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(t){}r.clsPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).clsObserver.apply(t,arguments)}));try{r.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(t){}}if("addEventListener"in document){r.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((function(t){document.addEventListener(t,(function(){var t;return(t=r).captureInteraction.apply(t,arguments)}),(0,e.m)(!1))}))}return i=function(){var t;return(t=r).captureVisibilityChange.apply(t,arguments)},"addEventListener"in document&&R&&document.addEventListener(R,(function(){k&&document[k]?i(document[k]):document[A]?i("hidden"):i("visible")}),(0,e.m)(!1)),r}r=t,(n=i).prototype=Object.create(r.prototype),n.prototype.constructor=n,N(n,r);var o=i.prototype;return o.isEnabled=function(){return!1!==(0,x.Mt)(this.agentIdentifier,"page_view_timing.enabled")},o.perfObserver=function(t,e){var n=this;t.getEntries().forEach((function(t){"first-paint"===t.name?(0,w.p)("timing",["fp",Math.floor(t.startTime)],void 0,void 0,n.ee):"first-contentful-paint"===t.name&&(0,w.p)("timing",["fcp",Math.floor(t.startTime)],void 0,void 0,n.ee)}))},o.lcpObserver=function(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(this.pageHiddenTime<r.startTime)return;var i=[r],o=this.addConnectionAttributes({});o&&i.push(o),(0,w.p)("lcp",i,void 0,void 0,this.ee)}},o.clsObserver=function(t){var e=this;t.getEntries().forEach((function(t){t.hadRecentInput||(0,w.p)("cls",[t],void 0,void 0,e.ee)}))},o.addConnectionAttributes=function(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t},o.captureInteraction=function(t){if(t instanceof z.Y.EV&&!this.fiRecorded){var e=Math.round(t.timeStamp),n={type:t.type};this.addConnectionAttributes(n),e<=(0,O.zO)()?n.fid=(0,O.zO)()-e:e>(0,O.os)()&&e<=Date.now()?(e-=(0,O.os)(),n.fid=(0,O.zO)()-e):e=(0,O.zO)(),this.fiRecorded=!0,(0,w.p)("timing",["fi",e,n],void 0,void 0,this.ee)}},o.captureVisibilityChange=function(t){"hidden"===t&&(this.pageHiddenTime=(0,O.zO)(),(0,w.p)("pageHide",[this.pageHiddenTime],void 0,void 0,this.ee))},i}(C.W),q=i(3350),D="React",B="Angular",F="AngularJS",G="Backbone",U="Ember",X="Vue",Z="Meteor",V="Zepto",W="Jquery";function Y(){var t=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var t=document.querySelectorAll("body > div"),e=0;e<t.length;e++)if(Object.keys(t[e]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(t){return!1}})()&&t.push(D),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(t){return!1}}()&&t.push(F),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(t){return!1}}()&&t.push(B),window.Backbone&&t.push(G),window.Ember&&t.push(U),window.Vue&&t.push(X),window.Meteor&&t.push(Z),window.Zepto&&t.push(V),window.jQuery&&t.push(W)}catch(t){}return t}var Q=i(7299),K=i(603),J=i(158);function $(t,e){return $=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},$(t,e)}var tt=function(t){var e,n;function r(e){var n;return(n=t.call(this,e)||this).singleChecks(),(0,q.X)("record-supportability",(function(){var t;return(t=n).recordSupportability.apply(t,arguments)}),void 0,n.ee),(0,q.X)("record-custom",(function(){var t;return(t=n).recordCustom.apply(t,arguments)}),void 0,n.ee),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,$(e,n);var i=r.prototype;return i.recordSupportability=function(t,e){var n=["sm",t,{name:t},e];return(0,w.p)("storeMetric",n,null,void 0,this.ee),n},i.recordCustom=function(t,e){var n=["cm",t,{name:t},e];return(0,w.p)("storeEventMetrics",n,null,void 0,this.ee),n},i.singleChecks=function(){var t=this;this.recordSupportability("Generic/Version/"+J.q+"/Detected"),u((function(){Y().forEach((function(e){t.recordSupportability("Framework/"+e+"/Detected")}))})),Q.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),Q.T.supportabilityMetricSent=!0);var e=(0,K.$c)(this.agentIdentifier);e.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),e.length>0&&!(0,K.Ng)(e)&&this.recordSupportability("Generic/Obfuscate/Invalid")},r}(C.W),et=i(4217),nt=i(8118),rt=i.n(nt),it=window,ot="fetch-",at="fetch-body-",ct=["arrayBuffer","blob","json","text","formData"],ut=it.Request,st=it.Response,ft="prototype",dt="nr@context",lt={};function pt(t){var e=function(t){return(t||s.ee).get("fetch")}(t);if(!(ut&&st&&window.fetch))return e;if(lt[e.debugId])return e;function n(t,n,r){var i=t[n];"function"==typeof i&&(t[n]=function(){var t,n=rt()(arguments),o={};e.emit(r+"before-start",[n],o),o[dt]&&o[dt].dt&&(t=o[dt].dt);var a=i.apply(this,n);return e.emit(r+"start",[n,t],a),a.then((function(t){return e.emit(r+"end",[null,t],a),t}),(function(t){throw e.emit(r+"end",[t],a),t}))})}return lt[e.debugId]=!0,(0,b.D)(ct,(function(t,e){n(ut[ft],e,at),n(st[ft],e,at)})),n(it,"fetch",ot),e.on("fetch-end",(function(t,n){var r=this;if(n){var i=n.headers.get("content-length");null!==i&&(r.rxSize=i),e.emit("fetch-done",[null,n],r)}else e.emit("fetch-done",[t],r)})),e}var ht="nr@original",vt=Object.prototype.hasOwnProperty,gt=!1;function mt(t,e){return t||(t=s.ee),n.inPlace=function(t,e,r,i,o){r||(r="");var a,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],bt(a=t[c])||(t[c]=n(a,s?c+r:r,i,c,o))},n.flag=ht,n;function n(e,n,i,o,a){return bt(e)?e:(n||(n=""),c[ht]=e,wt(e,c,t),c);function c(){var c,u,s,f;try{u=this,c=rt()(arguments),s="function"==typeof i?i(c,u):i||{}}catch(e){yt([e,"",[c,u,o],s],t)}r(n+"start",[c,u,o],s,a);try{return f=e.apply(u,c)}catch(t){throw r(n+"err",[c,u,t],s,a),t}finally{r(n+"end",[c,u,f],s,a)}}}function r(n,r,i,o){if(!gt||e){var a=gt;gt=!0;try{t.emit(n,r,i,e,o)}catch(e){yt([e,n,r,i],t)}gt=a}}}function yt(t,e){e||(e=s.ee);try{e.emit("internal-error",t)}catch(t){}}function wt(t,e,n){if(Object.defineProperty&&Object.keys)try{return Object.keys(t).forEach((function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})})),e}catch(t){yt([t],n)}for(var r in t)vt.call(t,r)&&(e[r]=t[r]);return e}function bt(t){return!(t&&t instanceof Function&&t.apply&&!t[ht])}var Ot={};function xt(t){var e=function(t){return(t||s.ee).get("timer")}(t);if(Ot[e.debugId])return e;Ot[e.debugId]=!0;var n=mt(e),r="setTimeout",i="setInterval",o="clearTimeout",a="-start";return n.inPlace(window,[r,"setImmediate"],"setTimeout-"),n.inPlace(window,[i],"setInterval-"),n.inPlace(window,[o,"clearImmediate"],"clearTimeout-"),e.on(i+a,(function(t,e,r){t[0]=n(t[0],"fn-",null,r)})),e.on(r+a,(function(t,e,r){this.method=r,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=n(t[0],"fn-",this,r)})),e}var Et={};function jt(t){var e=function(t){return(t||s.ee).get("raf")}(t);if(Et[e.debugId])return e;Et[e.debugId]=!0;var n=mt(e);return n.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),e.on("raf-start",(function(t){t[0]=n(t[0],"fn-")})),e}var _t={};function Pt(t){var e=function(t){return(t||s.ee).get("history")}(t);if(_t[e.debugId])return e;_t[e.debugId]=!0;var n=mt(e),r=window.history&&window.history.constructor&&window.history.constructor.prototype,i=window.history;return r&&r.pushState&&r.replaceState&&(i=r),n.inPlace(i,["pushState","replaceState"],"-"),e}var Tt={};function St(t){var e=function(t){return(t||s.ee).get("events")}(t);if(Tt[e.debugId])return e;Tt[e.debugId]=!0;var n=mt(e,!0),r=XMLHttpRequest,i="addEventListener",o="removeEventListener";function a(t){for(var e=t;e&&!e.hasOwnProperty(i);)e=Object.getPrototypeOf(e);e&&c(e)}function c(t){n.inPlace(t,[i,o],"-",u)}function u(t,e){return t[1]}return"getPrototypeOf"in Object?(a(document),a(window),a(r.prototype)):r.prototype.hasOwnProperty(i)&&(c(window),c(r.prototype)),e.on("addEventListener-start",(function(t,e){var r=t[1];if(null!==r&&("function"==typeof r||"object"==typeof r)){var i=(0,et.X)(r,"nr@wrapped",(function(){var t={object:function(){if("function"!=typeof r.handleEvent)return;return r.handleEvent.apply(r,arguments)},function:r}[typeof r];return t?n(t,"fn-",null,t.name||"anonymous"):r}));this.wrapped=t[1]=i}})),e.on("removeEventListener-start",(function(t){t[1]=this.wrapped||t[1]})),e}var Lt={};function Ct(t){var n=t||s.ee,r=function(t){return(t||s.ee).get("xhr")}(n);if(Lt[r.debugId])return r;Lt[r.debugId]=!0,St(n);var i=mt(r),o=z.Y.XHR,a=z.Y.MO,c=z.Y.PR,u=z.Y.SI,f="readystatechange",d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],l=[],p=window.XMLHttpRequest.listeners,h=window.XMLHttpRequest=function(t){var n=new o(t);function i(){try{r.emit("new-xhr",[n],n),n.addEventListener(f,g,(0,e.m)(!1))}catch(t){console.error(t);try{r.emit("internal-error",[t])}catch(t){}}}return this.listeners=p?[].concat(p,[i]):[i],this.listeners.forEach((function(t){return t()})),n};function v(t,e){i.inPlace(e,["onreadystatechange"],"fn-",O)}function g(){var t=this,e=r.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,r.emit("xhr-resolved",[],t)),i.inPlace(t,d,"fn-",O)}if(function(t,e){for(var n in t)e[n]=t[n]}(o,h),h.prototype=o.prototype,i.inPlace(h.prototype,["open","send"],"-xhr-",O),r.on("send-xhr-start",(function(t,e){v(t,e),function(t){l.push(t),a&&(m?m.then(b):u?u(b):(y=-y,w.data=y))}(e)})),r.on("open-xhr-start",v),a){var m=c&&c.resolve();if(!u&&!c){var y=1,w=document.createTextNode(y);new a(b).observe(w,{characterData:!0})}}else n.on("fn-end",(function(t){t[0]&&t[0].type===f||b()}));function b(){for(var t=0;t<l.length;t++)v(0,l[t]);l.length&&(l=[])}function O(t,e){return e}return r}function It(t){return St(t)}function At(t){return jt(t)}function Rt(t){return xt(t)}function kt(t){return Ct(t)}function Ht(t,e){return Ht=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},Ht(t,e)}var zt="nr@seenError",Nt=function(t){var e,n;function r(e){var n;(n=t.call(this,e)||this).skipNext=0,n.handleErrors=!1,n.origOnerror=window.onerror;var r=function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(n),i=(0,m.O)(n.agentIdentifier);i.features.err=!0,r.ee.on("fn-start",(function(t,e,n){r.handleErrors&&(r.skipNext+=1)})),r.ee.on("fn-err",(function(t,e,n){r.handleErrors&&!n[zt]&&((0,et.X)(n,zt,(function(){return!0})),this.thrown=!0,qt(n,void 0,r.ee))})),r.ee.on("fn-end",(function(){r.handleErrors&&!this.thrown&&r.skipNext>0&&(r.skipNext-=1)})),r.ee.on("internal-error",(function(t){(0,w.p)("ierr",[t,(0,O.zO)(),!0],void 0,void 0,r.ee)}));var o=window.onerror;window.onerror=function(){var t;return o&&o.apply(void 0,arguments),(t=n).onerrorHandler.apply(t,arguments),!1};try{window.addEventListener("unhandledrejection",(function(t){var e=new Error(""+t.reason);(0,w.p)("err",[e,(0,O.zO)(),!1,{unhandledPromiseRejection:1}],void 0,void 0,n.ee)}))}catch(t){}try{throw new Error}catch(t){"stack"in t&&(Rt(n.ee),At(n.ee),"addEventListener"in window&&It(n.ee),i.xhrWrappable&&kt(n.ee),r.handleErrors=!0)}return n}return n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,Ht(e,n),r.prototype.onerrorHandler=function(t,e,n,r,i){try{this.skipNext?this.skipNext-=1:qt(i||new Mt(t,e,n),!0,this.ee)}catch(t){try{(0,w.p)("ierr",[t,(0,O.zO)(),!0],void 0,void 0,this.ee)}catch(t){}}return"function"==typeof this.origOnerror&&this.origOnerror.apply(this,rt()(arguments))},r}(C.W);function Mt(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function qt(t,e,n){var r=e?null:(0,O.zO)();(0,w.p)("err",[t,r],void 0,void 0,n)}var Dt=1;function Bt(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:(0,et.X)(t,"nr@id",(function(){return Dt++}))}var Ft=i(5973);function Gt(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(t){return}}}var Ut=i(7001),Xt=i(4168),Zt=function(){function t(t){this.agentIdentifier=t,this.generateTracePayload=this.generateTracePayload.bind(this),this.shouldGenerateTrace=this.shouldGenerateTrace.bind(this)}var e=t.prototype;return e.generateTracePayload=function(t){if(!this.shouldGenerateTrace(t))return null;var e=P(this.agentIdentifier);if(!e)return null;var n=(e.accountID||"").toString()||null,r=(e.agentID||"").toString()||null,i=(e.trustKey||"").toString()||null;if(!n||!r)return null;var o=(0,Xt.M)(),a=(0,Xt.Ht)(),c=Date.now(),u={spanId:o,traceId:a,timestamp:c};return(t.sameOrigin||this.isAllowedOrigin(t)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(o,a),u.traceContextStateHeader=this.generateTraceContextStateHeader(o,c,n,r,i)),(t.sameOrigin&&!this.excludeNewrelicHeader()||!t.sameOrigin&&this.isAllowedOrigin(t)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(o,a,c,n,r,i)),u},e.generateTraceContextParentHeader=function(t,e){return"00-"+e+"-"+t+"-01"},e.generateTraceContextStateHeader=function(t,e,n,r,i){return i+"@nr=0-1-"+n+"-"+r+"-"+t+"----"+e},e.generateTraceHeader=function(t,e,n,r,i,o){if(!("btoa"in window&&"function"==typeof window.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(a.d.tk=o),btoa(JSON.stringify(a))},e.shouldGenerateTrace=function(t){return this.isDtEnabled()&&this.isAllowedOrigin(t)},e.isAllowedOrigin=function(t){var e=!1,n={};if((0,x.Mt)(this.agentIdentifier,"distributed_tracing")&&(n=(0,x.P_)(this.agentIdentifier).distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=(0,Ut.e)(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e},e.isDtEnabled=function(){var t=(0,x.Mt)(this.agentIdentifier,"distributed_tracing");return!!t&&!!t.enabled},e.excludeNewrelicHeader=function(){var t=(0,x.Mt)(this.agentIdentifier,"distributed_tracing");return!!t&&!!t.exclude_newrelic_header},e.useNewrelicHeaderForCors=function(){var t=(0,x.Mt)(this.agentIdentifier,"distributed_tracing");return!!t&&!1!==t.cors_use_newrelic_header},e.useTraceContextHeadersForCors=function(){var t=(0,x.Mt)(this.agentIdentifier,"distributed_tracing");return!!t&&!!t.cors_use_tracecontext_headers},t}();function Vt(t,e){return Vt=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},Vt(t,e)}var Wt=["load","error","abort","timeout"],Yt=Wt.length,Qt=z.Y.REQ,Kt=window.XMLHttpRequest,Jt=function(t){var n,r;function i(n){var r;r=t.call(this,n)||this;var i=(0,m.O)(r.agentIdentifier);return!i.xhrWrappable||i.disabled?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r):(i.features.xhr=!0,r.dt=new Zt(r.agentIdentifier),r.handler=function(t,e,n,i){return(0,w.p)(t,e,n,i,r.ee)},r.wrappedFetch=function(t,e){return n=t,pt(n);var n}(r.ee),kt(r.ee),function(t,n,r,i){function o(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=b,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,n.params=this.params||{},n.metrics=this.metrics||{},t.addEventListener("load",(function(e){E(n,t)}),(0,e.m)(!1)),Ft.I&&(Ft.I>34||Ft.I<10)||t.addEventListener("progress",(function(t){n.lastSize=t.loaded}),(0,e.m)(!1))}function a(t){this.params={method:t[0]},x(this,t[1]),this.metrics={}}function c(e,n){var r=P(t);"xpid"in r&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",r.xpid);var o=i.generateTracePayload(this.parsedOrigin);if(o){var a=!1;o.newrelicHeader&&(n.setRequestHeader("newrelic",o.newrelicHeader),a=!0),o.traceContextParentHeader&&(n.setRequestHeader("traceparent",o.traceContextParentHeader),o.traceContextStateHeader&&n.setRequestHeader("tracestate",o.traceContextStateHeader),a=!0),a&&(this.dt=o)}}function u(t,r){var i=this.metrics,o=t[0],a=this;if(i&&o){var c=Gt(o);c&&(i.txSize=c)}this.startTime=(0,O.zO)(),this.listener=function(t){try{"abort"!==t.type||a.loadCaptureCalled||(a.params.aborted=!0),("load"!==t.type||a.called===a.totalCbs&&(a.onloadCalled||"function"!=typeof r.onload))&&a.end(r)}catch(t){try{n.emit("internal-error",[t])}catch(t){}}};for(var u=0;u<Yt;u++)r.addEventListener(Wt[u],this.listener,(0,e.m)(!1))}function s(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}function f(t,e){var n=""+Bt(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}function d(t,e){var n=""+Bt(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}function l(){this.endTime=(0,O.zO)()}function p(t,e){e instanceof Kt&&"load"===t[0]&&n.emit("xhr-load-added",[t[1],t[2]],e)}function h(t,e){e instanceof Kt&&"load"===t[0]&&n.emit("xhr-load-removed",[t[1],t[2]],e)}function v(t,e,n){e instanceof Kt&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(0,O.zO)()))}function g(t,e){this.xhrCbStart&&n.emit("xhr-cb-time",[(0,O.zO)()-this.xhrCbStart,this.onload,e],e)}function m(t){var e,n=t[1]||{};"string"==typeof t[0]?e=t[0]:t[0]&&t[0].url?e=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(e=t[0].href),e&&(this.parsedOrigin=(0,Ut.e)(e),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=i.generateTracePayload(this.parsedOrigin);if(r&&(r.newrelicHeader||r.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in n)o[a]=n[a];o.headers=new Headers(n.headers||{}),c(o.headers,r)&&(this.dt=r),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&c(t[0].headers,r)&&(this.dt=r);function c(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}}function y(t,e){this.params={},this.metrics={},this.startTime=(0,O.zO)(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;"string"==typeof i?n=i:"object"==typeof i&&i instanceof Qt?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),x(this,n);var o=(""+(i&&i instanceof Qt&&i.method||r.method||"GET")).toUpperCase();this.params.method=o,this.txSize=Gt(r.body)||0}function w(t,e){var n;this.endTime=(0,O.zO)(),this.params||(this.params={}),this.params.status=e?e.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var i={txSize:this.txSize,rxSize:n,duration:(0,O.zO)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this)}function b(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;i<Yt;i++)t.removeEventListener(Wt[i],this.listener,!1);e.aborted||(n.duration=(0,O.zO)()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):E(this,t),n.cbTime=this.cbTime,r("xhr",[e,n,this.startTime,this.endTime,"xhr"],this))}}function x(t,e){var n=(0,Ut.e)(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function E(t,e){t.params.status=e.status;var n=function(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?Gt(t.response):"text"===n||""===n||void 0===n?Gt(t.responseText):void 0}(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}n.on("new-xhr",o),n.on("open-xhr-start",a),n.on("open-xhr-end",c),n.on("send-xhr-start",u),n.on("xhr-cb-time",s),n.on("xhr-load-added",f),n.on("xhr-load-removed",d),n.on("xhr-resolved",l),n.on("addEventListener-end",p),n.on("removeEventListener-end",h),n.on("fn-end",g),n.on("fetch-before-start",m),n.on("fetch-start",y),n.on("fn-start",v),n.on("fetch-done",w)}(r.agentIdentifier,r.ee,r.handler,r.dt),r)}return r=t,(n=i).prototype=Object.create(r.prototype),n.prototype.constructor=n,Vt(n,r),i}(C.W);var $t=i(5098);function te(t,e){return te=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},te(t,e)}var ee="addEventListener",ne="resourcetimingbufferfull",re="bstResource",ie="-start",oe="-end",ae="fn-start",ce="fn-end",ue="bstTimer",se="pushState",fe=z.Y.EV,de=function(t){var n,r;function i(n){var r;if(r=t.call(this,n)||this,!(window.performance&&window.performance.timing&&window.performance.getEntriesByType))return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);(0,m.O)(r.agentIdentifier).features.stn=!0;var i=r.ee;function o(t){if((0,w.p)(re,[window.performance.getEntriesByType("resource")],void 0,void 0,i),window.performance.clearResourceTimings)try{window.performance.removeEventListener(ne,o,!1)}catch(t){}else try{window.performance.removeEventListener("webkitresourcetimingbufferfull",o,!1)}catch(t){}}return r.timerEE=Rt(r.ee),r.rafEE=At(r.ee),Pt(r.ee),It(r.ee),r.ee.on(ae,(function(t,e){t[0]instanceof fe&&(this.bstStart=(0,O.zO)())})),r.ee.on(ce,(function(t,e){var n=t[0];n instanceof fe&&(0,w.p)("bst",[n,e,this.bstStart,(0,O.zO)()],void 0,void 0,i)})),r.timerEE.on(ae,(function(t,e,n){this.bstStart=(0,O.zO)(),this.bstType=n})),r.timerEE.on(ce,(function(t,e){(0,w.p)(ue,[e,this.bstStart,(0,O.zO)(),this.bstType],void 0,void 0,i)})),r.rafEE.on(ae,(function(){this.bstStart=(0,O.zO)()})),r.rafEE.on(ce,(function(t,e){(0,w.p)(ue,[e,this.bstStart,(0,O.zO)(),"requestAnimationFrame"],void 0,void 0,i)})),r.ee.on(se+ie,(function(t){this.time=(0,O.zO)(),this.startPath=location.pathname+location.hash})),r.ee.on(se+oe,(function(t){(0,w.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,void 0,i)})),(0,$t.W)()?((0,w.p)(re,[window.performance.getEntriesByType("resource")],void 0,void 0,i),function(){var t=new PerformanceObserver((function(t,e){var n=t.getEntries();(0,w.p)(re,[n],void 0,void 0,i)}));try{t.observe({entryTypes:["resource"]})}catch(t){}}()):ee in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener(ne,o,(0,e.m)(!1)):window.performance.addEventListener("webkitresourcetimingbufferfull",o,(0,e.m)(!1))),document.addEventListener("scroll",r.noOp,(0,e.m)(!1)),document.addEventListener("keypress",r.noOp,(0,e.m)(!1)),document.addEventListener("click",r.noOp,(0,e.m)(!1)),r}return r=t,(n=i).prototype=Object.create(r.prototype),n.prototype.constructor=n,te(n,r),i.prototype.noOp=function(t){},i}(C.W);function le(t,e){return le=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},le(t,e)}var pe=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,m.O)(n.agentIdentifier).features.ins=!0,n}return n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,le(e,n),r}(C.W),he=i(847);new Promise((function(e,n){if(T)e(T);else{var r=(0,g.gG)();try{(0,y.L)(t.Z,r.info),(0,x.Dg)(t.Z,r.init),function(t,e){if(!t)throw new Error("All loader-config objects require an agent identifier!");_[t]=new E.I(e,j),(0,g.Qy)(t,_[t],"loader_config")}(t.Z,r.loader_config),(0,m.s)(t.Z,{}),function(t){var e=(0,g.fP)(),n=s.ee.get(t),r=n.get("tracer"),i="api-",o="api-ixn-";function a(){}(0,b.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(t,n){e[n]=u(i,n,!0,"api")})),e.addPageAction=u(i,"addPageAction",!0),e.setCurrentRouteName=u(i,"routeName",!0),e.setPageViewName=function(e,n){if("string"==typeof e)return"/"!==e.charAt(0)&&(e="/"+e),(0,m.O)(t).customTransaction=(n||"http://custom.transaction")+e,u(i,"setPageViewName",!0,"api")()},e.setCustomAttribute=function(e,n){var r,o=(0,y.C)(t);return(0,y.L)(t,Object.assign({},o,{jsAttributes:Object.assign({},o.jsAttributes,(r={},r[e]=n,r))})),u(i,"setCustomAttribute",!0,"api")()},e.interaction=function(){return(new a).get()};var c=a.prototype={createTracer:function(t,e){var i={},o=this,a="function"==typeof e;return(0,w.p)("api-ixn-tracer",[(0,O.zO)(),t,i],o,void 0,n),function(){if(r.emit((a?"":"no-")+"fn-start",[(0,O.zO)(),o,a],i),a)try{return e.apply(this,arguments)}catch(t){throw r.emit("fn-err",[arguments,this,"string"==typeof t?new Error(t):t],i),t}finally{r.emit("fn-end",[(0,O.zO)()],i)}}}};function u(t,e,r,i){return function(){return(0,w.p)("record-supportability",["API/"+e+"/called"],void 0,void 0,n),(0,w.p)(t+e,[(0,O.zO)()].concat(v()(arguments)),r?null:this,i,n),r?void 0:this}}(0,b.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(t,e){c[e]=u(o,e)})),e.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),(0,w.p)("record-supportability",["API/noticeError/called"],void 0,void 0,n),(0,w.p)("err",[t,(0,O.zO)(),!1,e],void 0,void 0,n)}}(t.Z),e(T=!0)}catch(t){n(t)}}})).then((function(){var e,n,r,i=(0,he.K)(t.Z);i.page_view_event&&new H(t.Z),i.page_view_timing&&new M(t.Z),i.metrics&&new tt(t.Z),i.jserrors&&new Nt(t.Z),i.ajax&&new Jt(t.Z),i.session_trace&&new de(t.Z),i.page_action&&new pe(t.Z),e="pro",n?setTimeout((function(){return p(e)}),r||1e3):c((function(){return p(e)}))}))}(),o}()}));</script>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_Mor0-xnq-w8_5sKktsVfw3hIahmuHTG6HyMcAKvZpds.css" />
+<link rel="stylesheet" media="all" href="https://style-assets.tableau.com/v7.0.5/css/style.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_PPrt_Su_stjrZSGb65nZjPYHdqADRKTmtFTXbfutvGw.css" />
+
+    <script src="https://a.sfdcstatic.com/enterprise/tableau/prod/6140/v1/oneTrust/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="2d08f29e-0ede-4e8c-997c-f7ef5be8d4e7"></script><style>
+.intellimize-element {
+  transition: opacity 0.25s ease-in-out;
+}
+.intellimize-loading .intellimize-element {
+  opacity: 0 !important;
+}
+</style>
+<script>
+(function () {
+  // Add the intellimize-loading class immediately.
+  document.documentElement.className += ' intellimize-loading';
+})();
+</script><link rel="preload" href="https://www.tableau.com/sites/all/fonts/bentonsans-book.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" href="https://www.tableau.com/sites/all/fonts/bentonsans-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" href="https://www.tableau.com/sites/all/fonts/merriweather-light.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><meta name="dataModel:language" content="en-US" />
+<script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"drupalLanguage":"en-US","drupalCountry":"US","drupalSitename":"Tableau","entityLangcode":"en-US","entityStatus":"1","entityUid":"65948","entityUuid":"86ea5a26-10dc-42da-9cf8-84dd2301615b","entityType":"node","entityBundle":"page","entityIdentifier":"62476","entityTitle":"We couldn\u0027t find the page you were looking for.","userUid":0,"userRoles":["anonymous"],"campaignDetails":[],"partnerDetails":null,"entityBundleNice":"Resource","entityId":"62476","entityTnid":"62476","entityLabel":"We couldn\u0027t find the page you were looking for."});</script>
+<meta name="robots" content="noindex, nofollow" />
+<meta name="twitter:card" content="summary" />
+<meta property="og:site_name" content="Tableau" />
+<link rel="canonical" href="https://www.tableau.com/404" />
+<meta name="twitter:title" content="We couldn&#039;t find the page you were looking for." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.tableau.com/page-not-found" />
+<meta name="twitter:creator" content="@tableau" />
+<meta property="og:title" content="We couldn&#039;t find the page you were looking for." />
+<meta name="twitter:url" content="https://www.tableau.com/page-not-found" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<script type="text/javascript">document.documentElement.className += ' js';</script>
+<meta name="breadcrumb_l1_url" content="" />
+<meta name="breadcrumb_l1_text" content="We couldn&#039;t find the page you were looking for." />
+<link rel="icon" href="/themes/custom/tableau_www/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="preconnect" href="https://api.intellimize.co" />
+<link rel="dns-prefetch" href="https://api.intellimize.co" />
+<link rel="alternate" hreflang="fr-CA" href="https://www.tableau.com/fr-ca/404" />
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.tableau.com/zh-cn/404" />
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.tableau.com/zh-tw/404" />
+<link rel="alternate" hreflang="en-US" href="https://www.tableau.com/404" />
+<link rel="alternate" hreflang="nl-NL" href="https://www.tableau.com/nl-nl/404" />
+<link rel="alternate" hreflang="en-GB" href="https://www.tableau.com/en-gb/404" />
+<link rel="alternate" hreflang="fr-FR" href="https://www.tableau.com/fr-fr/404" />
+<link rel="alternate" hreflang="de-DE" href="https://www.tableau.com/de-de/404" />
+<link rel="alternate" hreflang="es-MX" href="https://www.tableau.com/es-mx/404" />
+<link rel="alternate" hreflang="it-IT" href="https://www.tableau.com/it-it/404" />
+<link rel="alternate" hreflang="ja-JP" href="https://www.tableau.com/ja-jp/404" />
+<link rel="alternate" hreflang="ko-KR" href="https://www.tableau.com/ko-kr/404" />
+<link rel="alternate" hreflang="pt-BR" href="https://www.tableau.com/pt-br/404" />
+<link rel="alternate" hreflang="es-ES" href="https://www.tableau.com/es-es/404" />
+<link rel="alternate" hreflang="sv-SE" href="https://www.tableau.com/sv-se/404" />
+<link rel="alternate" hreflang="x-default" href="https://www.tableau.com/404" />
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script', 'dataLayer', 'GTM-BVCN');</script>
+
+    <title>We couldn&#039;t find the page you were looking for.</title>
+    
+        
+  </head>
+  <body  data-entity-uuid="86ea5a26-10dc-42da-9cf8-84dd2301615b" data-user-type="anonymous" class="i18n-en i18n-en-us" >
+              <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-BVCN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager -->
+            <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+  
+  
+  
+<div class="page l-page flex-fill-viewport-height">
+          
+        <header id="header" class="global-header global-header-v1">
+      <nav class="global-header__helmet" role="navigation" aria-label="helmet">
+        <div class="global-header__helmet-wrapper content-container content-container--wide">
+          <a href="https://www.salesforce.com/?placement=helmet&utm_medium=Referral&utm_source=Tableau" title="Return to the Salesforce home page" class="global-header__helmet-logo">
+            <img loading="eager" src="/themes/custom/tableau_www/img/salesforce-logo.svg" alt="Salesforce" />
+          </a>
+        </div>
+      </nav>
+      <nav class="global-header__container content-container content-container--wide" aria-label="main">
+        <div class="global-header__nav-wrapper">
+                    <div id="block-tableau-logo" class="global-header__logo-wrapper">
+  
+  
+
+      <a href="/" title="Return to the Tableau Software home page" rel="home" class="site-logo logo-img">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcQAAABeCAMAAACKC5S8AAAAYFBMVEUAAAAbQ33JIDXpgSsxTYDHHzNvmaUcRH0bQ38bQ30cRHxbiJvskS0bQ34cQ33rkS1ul6fpdS1abZJZZZFZZZEiSYHJHzVZh5tacZXJIDXskS1wmaZaZZEcRH5Zh5vpdi0aehpOAAAAGXRSTlMA58A+F0CBvkKCZcDAn89/P8BAwYAwfoBm00FwiwAABOBJREFUeF7s211rhDAQRuGAQ1w/YGctpSVR+///ZTW5MNAstLTrRnvO3Xv9IAxIzM+y3ltTWLQ/IoFIIBKIIBKIBCKJxlZEjYkpOro653qTpP5L1iTNS515bAQiiGJjnfedjemhEEHMHzYggkgg7hWIBCKBCCKIl5CAeOSm0OV8iKIqIBZctRUQk52Fk2ErICZbQHxKlbvf1WR6m+83gJgLRBBBbNbasyP2SW4pmVnE924ryCVbC/2waq7T2AOu06Zea4+MCGI9rTUgfisQQaxCh0YE8faxdPs3iCCCCCKIIIIIIoiv4TcGiPun1uofIb6M4ziA+Mz3Tr9H/GTnbpvahmE4gNsgJsk7e49mcJtu3/9brrRDTXAbP9I2XP7v4Kqi5Oec3cTl8ohAL4krQ9TG6V0Q77/sUoP4a5enyyJGPlRZ7wyrUA4R6Fg2BBGcD7KLRQeFcA7tawXJPuZ0HL+EprW8j/6E6FLENHlEzSURycoxFksRp1ViuRsRePqOvoAxYtq4FJ+WGToEdoR+rYjgJUkeMU2IfYhkZRbrTCZOkjQjMrO3ZGmdiBBkDKLYmEWsE8koehmIiJEdOuZ1IqKMQhQL7YgkUqnIMhSR2NtYgng/zQFx9qsmRMZ57P8ZYh6XPxVaW4FoZ0WhGREmb4KYGxVKoBWhF5E9Ezsb84g7t6V8O7GH8QXxaXHvIkpJOHPygtPFRTGidYeOotdLpxURdX0E0/nRm7OxMmsCnO1ChIDkrD/9Re6vjYg//6T5Ph6R5e3ZAixFxHRRYtsQ9bIK8GamhuIKY7gH0YBDT2aViCdGPDcg6jmlNkSfiEDm0sakwlAHoiZF1K1qt4pIOvf0ISoDtyHatA1cbkP0Sh2LuMI5kXW89yHqlROaEEl7TFpbrvBmLOIK79joAIB+RBNknwZEBQvpIlviYoW+4YZoTS+ilgm0IHo5G1pEhA3xdS7CgYjUgojViF4BNkQZh0jvg8gLFStB3K5EdxuIj3e71CDiLnzJOTFceU7UqTmTK86Jd8+71CDqCVrV6hT7V6dQjUhDEdM9NitAvJnPiU7bSHKdz4mafkTNWMT0OLAfkXvu2MD5O6+ZCtgQ9d6p60WMffdOgw6BuqMULEdMXs8fBZFFFXsQY+dTDHd6LQou+zjRQyGiT+bdQ89h/Yj6PBFJj7YQUR8nGuh/nqhtwLE18ktdhGQrjiu52xrgjSqvGDHd2mKRmTFUPdkPyJxsB2hBJHlN4H0wZLqIokHPfNwOkBkngfSx6T7wARCNH7fHJkAzonHVXTg5new4seh1rAqbLsT7fa6OaHw/ohq2IxrOdFGsWPV6bzoQNddHNM4OQWQYuO9Uuyiu0NQcKJuPgmjAJ0eHtFiRKahG1PVR3f5hYFtVAr6mZ3g4Zo84+RlOFtAxh+n3GBiDmP8ShC5wCv5knFU4GPRdDJxweDL5EKMWoHeQP9DD60O+54fn83ks3wmbOfTMN0dqA/Ujprii/EgiOWYmgt428rk5xO0f9G2I750N8V97d5OCQAwDYLSI4M+yjqKQuf81rbQLwZWLQgPvXeEjkFUi4jSTt9MURIxmckTX+EVERBERMQERERERRbzXLpo6JIso4i1+TY6IiDw+/onYX/gsjefWRbMNJSe+JxARERERRUREREREalMWwxtlOQbs4dwwrgAAAABJRU5ErkJggg==" alt="Tableau, A Salesforce Company" />
+    </a>
+  </div>
+
+
+                                              <div class="mobile-buttons">
+            <button class="mobile-nav-button" data-search-trigger="coveo" aria-label="Toggle Main Menu" aria-controls="header-nav" aria-expanded="false">
+              <span class="mobile-nav-button__label">Menu</span>
+              <span aria-hidden="true" class="mobile-nav-button__icon"></span>
+            </button>
+          </div>
+                              <div id="site-header__inner" class="site-header__inner">
+                                    <div id="header-nav" class="header-nav" data-menu-open="false">
+                
+<div data-menu-name="main" id="block-tableau-main-menu" class="global-header__primary-nav">
+  
+  
+      
+          <ul  class="menu primary-nav__menu primary-nav__menu--level-1 menu--main__v1">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-1 primary-nav__menu-item--has-children">
+                              
+                      <a href="/why-tableau" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-1 primary-nav__menu-link--has-children" data-value="Why Tableau" data-section="header:primary-link" data-drupal-link-system-path="node/72654"><span class="primary-nav__menu-link-inner">Why Tableau</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="why-tableau-submenu-1" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-2" id="why-tableau-submenu-1">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/why-tableau/what-is-tableau" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="What Is Tableau" data-section="header:primary-sublink" data-drupal-link-system-path="node/72659"><span class="primary-nav__menu-link-inner">What Is Tableau</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/why-tableau/data-culture" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Build a Data Culture" data-section="header:primary-sublink" data-drupal-link-system-path="node/80503"><span class="primary-nav__menu-link-inner">Build a Data Culture</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/why-tableau/tableau-economy" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Tableau Economy" data-section="header:primary-sublink" data-drupal-link-system-path="node/86213"><span class="primary-nav__menu-link-inner">Tableau Economy</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/community" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="The Tableau Community" data-section="header:primary-sublink" data-drupal-link-system-path="node/74174"><span class="primary-nav__menu-link-inner">The Tableau Community</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/why-tableau/salesforce-advantage" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="The Salesforce Advantage" data-section="header:primary-sublink" data-drupal-link-system-path="node/93826"><span class="primary-nav__menu-link-inner">The Salesforce Advantage</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/why-tableau/our-customers" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Our Customers" data-section="header:primary-sublink" data-drupal-link-system-path="node/72660"><span class="primary-nav__menu-link-inner">Our Customers</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2 primary-nav__menu-item--has-children">
+                              
+                      <a href="/about" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2 primary-nav__menu-link--has-children" data-value="About Tableau" data-section="header:primary-sublink" data-drupal-link-system-path="node/62153"><span class="primary-nav__menu-link-inner">About Tableau</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="about-tableau-submenu-7" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-3" id="about-tableau-submenu-7">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/about/mission" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Mission" data-section="header:tertiary-link" data-drupal-link-system-path="node/62634"><span class="primary-nav__menu-link-inner">Mission</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/about/awards-and-recognition" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Awards and Recognition" data-section="header:tertiary-link" data-drupal-link-system-path="node/63422"><span class="primary-nav__menu-link-inner">Awards and Recognition</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/foundation" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Tableau Foundation" data-section="header:tertiary-link" data-drupal-link-system-path="node/63581"><span class="primary-nav__menu-link-inner">Tableau Foundation</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/about/careers/equality" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Equality at Tableau" data-section="header:tertiary-link" data-drupal-link-system-path="node/74595"><span class="primary-nav__menu-link-inner">Equality at Tableau</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/about/careers" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Careers" data-section="header:tertiary-link" data-drupal-link-system-path="node/63464"><span class="primary-nav__menu-link-inner">Careers</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-1 primary-nav__menu-item--has-children">
+                              
+                      <a href="/products" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-1 primary-nav__menu-link--has-children" data-value="Products" data-section="header:primary-link" data-drupal-link-system-path="node/72652"><span class="primary-nav__menu-link-inner">Products</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="products-submenu-2" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-2" id="products-submenu-2">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/our-platform" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Our Platform" data-section="header:primary-sublink" data-drupal-link-system-path="node/74175"><span class="primary-nav__menu-link-inner">Our Platform</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/desktop" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Tableau Desktop" data-section="header:primary-sublink" data-drupal-link-system-path="node/62386"><span class="primary-nav__menu-link-inner">Tableau Desktop</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/server" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Tableau Server" data-section="header:primary-sublink" data-drupal-link-system-path="node/62387"><span class="primary-nav__menu-link-inner">Tableau Server</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/cloud-bi" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Tableau Cloud" data-section="header:primary-sublink" data-drupal-link-system-path="node/62388"><span class="primary-nav__menu-link-inner">Tableau Cloud</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/prep" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Tableau Prep" data-section="header:primary-sublink" data-drupal-link-system-path="node/63077"><span class="primary-nav__menu-link-inner">Tableau Prep</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/crm-analytics" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" title="CRM Analytics (formerly Tableau CRM) will empower your Salesforce CRM users with actionable insights and AI-driven analytics right in their workflow." data-value="CRM Analytics" data-section="header:primary-sublink" data-drupal-link-system-path="node/75657"><span class="primary-nav__menu-link-inner">CRM Analytics</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/public" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Tableau Public" data-section="header:primary-sublink" data-drupal-link-system-path="node/76703"><span class="primary-nav__menu-link-inner">Tableau Public</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/data-management" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Data Management" data-section="header:primary-sublink" data-drupal-link-system-path="node/63320"><span class="primary-nav__menu-link-inner">Data Management</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/advanced-management" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Advanced Management" data-section="header:primary-sublink" data-drupal-link-system-path="node/92579"><span class="primary-nav__menu-link-inner">Advanced Management</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/embedded-analytics" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Embedded Analytics" data-section="header:primary-sublink" data-drupal-link-system-path="node/62685"><span class="primary-nav__menu-link-inner">Embedded Analytics</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/our-integrations" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Our Integrations" data-section="header:primary-sublink" data-drupal-link-system-path="node/72661"><span class="primary-nav__menu-link-inner">Our Integrations</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/products/new-features" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Latest Releases" data-section="header:primary-sublink" data-drupal-link-system-path="node/86241"><span class="primary-nav__menu-link-inner">Latest Releases</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/pricing/teams-orgs" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Plans and Pricing" data-section="header:primary-sublink" data-drupal-link-system-path="node/63095"><span class="primary-nav__menu-link-inner">Plans and Pricing</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-1 primary-nav__menu-item--has-children">
+                              
+                      <a href="/solutions" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-1 primary-nav__menu-link--has-children" data-value="Solutions" data-section="header:primary-link" data-drupal-link-system-path="node/73846"><span class="primary-nav__menu-link-inner">Solutions</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="solutions-submenu-3" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-2" id="solutions-submenu-3">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/learn/blueprint" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Tableau Blueprint" data-section="header:primary-sublink" data-drupal-link-system-path="node/63517"><span class="primary-nav__menu-link-inner">Tableau Blueprint</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/solutions/industries" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="By Industry" data-section="header:primary-sublink" data-drupal-link-system-path="node/90916"><span class="primary-nav__menu-link-inner">By Industry</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/solutions/departments" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="By Department" data-section="header:primary-sublink" data-drupal-link-system-path="node/63530"><span class="primary-nav__menu-link-inner">By Department</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/solutions/technologies" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="By Technology" data-section="header:primary-sublink" data-drupal-link-system-path="node/63534"><span class="primary-nav__menu-link-inner">By Technology</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/data-insights/dashboard-showcase" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Dashboard Showcase" data-section="header:primary-sublink" data-drupal-link-system-path="node/81036"><span class="primary-nav__menu-link-inner">Dashboard Showcase</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2 primary-nav__menu-item--has-children">
+                              
+                      <a href="/solutions/exchange" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2 primary-nav__menu-link--has-children" data-value="Tableau Exchange" data-section="header:primary-sublink" data-drupal-link-system-path="node/89888"><span class="primary-nav__menu-link-inner">Tableau Exchange</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="tableau-exchange-submenu-6" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-3" id="tableau-exchange-submenu-6">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/solutions/exchange/accelerators" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Accelerators" data-section="header:tertiary-link" data-drupal-link-system-path="node/63078"><span class="primary-nav__menu-link-inner">Accelerators</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-1 primary-nav__menu-item--has-children">
+                              
+                      <a href="/resources" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-1 primary-nav__menu-link--has-children" data-value="Resources" data-section="header:primary-link" data-drupal-link-system-path="node/72662"><span class="primary-nav__menu-link-inner">Resources</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="resources-submenu-4" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-2" id="resources-submenu-4">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/learn/get-started" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Getting Started" data-section="header:primary-sublink" data-drupal-link-system-path="node/63392"><span class="primary-nav__menu-link-inner">Getting Started</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2 primary-nav__menu-item--has-children">
+                              
+                      <a href="/learn" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2 primary-nav__menu-link--has-children" data-value="Learn Tableau" data-section="header:primary-sublink" data-drupal-link-system-path="node/62152"><span class="primary-nav__menu-link-inner">Learn Tableau</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="learn-tableau-submenu-2" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-3" id="learn-tableau-submenu-2">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/learn/training" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Free Training Videos" data-section="header:tertiary-link" data-drupal-link-system-path="node/62081"><span class="primary-nav__menu-link-inner">Free Training Videos</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/learn/certification" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Tableau Certification" data-section="header:tertiary-link" data-drupal-link-system-path="node/62346"><span class="primary-nav__menu-link-inner">Tableau Certification</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/learn/classroom" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Instructor-led Training" data-section="header:tertiary-link" data-drupal-link-system-path="node/62582"><span class="primary-nav__menu-link-inner">Instructor-led Training</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/learn/training/elearning" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Tableau eLearning" data-section="header:tertiary-link" data-drupal-link-system-path="node/62808"><span class="primary-nav__menu-link-inner">Tableau eLearning</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/community/academic" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Academic Programs" data-section="header:tertiary-link" data-drupal-link-system-path="node/78939"><span class="primary-nav__menu-link-inner">Academic Programs</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="https://www.tableau.com/data-insights" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Data Analytics Insights" data-section="header:primary-sublink"><span class="primary-nav__menu-link-inner">Data Analytics Insights</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2 primary-nav__menu-item--has-children">
+                              
+                      <a href="/resources/teams-organizations" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2 primary-nav__menu-link--has-children" data-value="Teams and Organizations" data-section="header:primary-sublink" data-drupal-link-system-path="node/85413"><span class="primary-nav__menu-link-inner">Teams and Organizations</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="teams-and-organizations-submenu-4" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-3" id="teams-and-organizations-submenu-4">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/resources/teams-organizations/premium-support" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Premium Support" data-section="header:tertiary-link" data-drupal-link-system-path="node/86067"><span class="primary-nav__menu-link-inner">Premium Support</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/resources/teams-organizations/learning" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Learning and Certification" data-section="header:tertiary-link" data-drupal-link-system-path="node/85416"><span class="primary-nav__menu-link-inner">Learning and Certification</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/resources/teams-organizations/professional-services" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Professional Services" data-section="header:tertiary-link" data-drupal-link-system-path="node/62347"><span class="primary-nav__menu-link-inner">Professional Services</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/resources/teams-organizations/customer-success" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Customer Success" data-section="header:tertiary-link" data-drupal-link-system-path="node/62728"><span class="primary-nav__menu-link-inner">Customer Success</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2 primary-nav__menu-item--has-children">
+                              
+                      <a href="/community" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2 primary-nav__menu-link--has-children" data-value="Community" data-section="header:primary-sublink" data-drupal-link-system-path="node/74174"><span class="primary-nav__menu-link-inner">Community</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="community-submenu-5" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-3" id="community-submenu-5">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/community/welcome" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Welcome" data-section="header:tertiary-link" data-drupal-link-system-path="node/78935"><span class="primary-nav__menu-link-inner">Welcome</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/community/public" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Tableau Public" data-section="header:tertiary-link" data-drupal-link-system-path="node/78933"><span class="primary-nav__menu-link-inner">Tableau Public</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="https://usergroups.tableau.com/" target="_blank" class="global-header__primary-sublink--repeat primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Tableau User Groups" data-section="header:tertiary-link"><span class="primary-nav__menu-link-inner">Tableau User Groups</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/community/community-leaders" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Community Leaders" data-section="header:tertiary-link" data-drupal-link-system-path="node/78942"><span class="primary-nav__menu-link-inner">Community Leaders</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/community/datadev" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="DataDev" data-section="header:tertiary-link" data-drupal-link-system-path="node/78948"><span class="primary-nav__menu-link-inner">DataDev</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/community/community-projects" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Community Projects" data-section="header:tertiary-link" data-drupal-link-system-path="node/78949"><span class="primary-nav__menu-link-inner">Community Projects</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="https://community.tableau.com/s/explore-forums" target="_blank" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Community Forums" data-section="header:tertiary-link"><span class="primary-nav__menu-link-inner">Community Forums</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/blog" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Blog" data-section="header:primary-sublink" data-drupal-link-system-path="node/94953"><span class="primary-nav__menu-link-inner">Blog</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/solutions/customers" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Customer Stories" data-section="header:primary-sublink" data-drupal-link-system-path="node/63466"><span class="primary-nav__menu-link-inner">Customer Stories</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2 primary-nav__menu-item--has-children">
+                              
+                      <a href="/community/events" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2 primary-nav__menu-link--has-children" data-value="Events" data-section="header:primary-sublink" data-drupal-link-system-path="node/62589"><span class="primary-nav__menu-link-inner">Events</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="events-submenu-8" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-3" id="events-submenu-8">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/events/video-library" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Event Video Library" data-section="header:tertiary-link" data-drupal-link-system-path="node/79240"><span class="primary-nav__menu-link-inner">Event Video Library</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/learn/webinars" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="On-Demand Webinars" data-section="header:tertiary-link" data-drupal-link-system-path="node/62087"><span class="primary-nav__menu-link-inner">On-Demand Webinars</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/events/conference" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Tableau Conference" data-section="header:tertiary-link" data-drupal-link-system-path="node/83159"><span class="primary-nav__menu-link-inner">Tableau Conference</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2 primary-nav__menu-item--has-children">
+                              
+                      <a href="/support" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2 primary-nav__menu-link--has-children" data-value="Support" data-section="header:primary-sublink" data-drupal-link-system-path="node/62345"><span class="primary-nav__menu-link-inner">Support</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="support-submenu-9" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-3" id="support-submenu-9">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/support/knowledgebase" target="_blank" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Knowledge Base" data-section="header:tertiary-link" data-drupal-link-system-path="node/62778"><span class="primary-nav__menu-link-inner">Knowledge Base</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/support/help" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Tableau Help" data-section="header:tertiary-link" data-drupal-link-system-path="node/61954"><span class="primary-nav__menu-link-inner">Tableau Help</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/support/releases-product" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="All Releases" data-section="header:tertiary-link" data-drupal-link-system-path="node/92202"><span class="primary-nav__menu-link-inner">All Releases</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2 primary-nav__menu-item--has-children">
+                              
+                      <a href="/resources/reference-materials" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2 primary-nav__menu-link--has-children" data-value="Reference Materials" data-section="header:primary-sublink" data-drupal-link-system-path="node/72663"><span class="primary-nav__menu-link-inner">Reference Materials</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="reference-materials-submenu-10" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-3" id="reference-materials-submenu-10">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/learn/articles" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Articles" data-section="header:tertiary-link" data-drupal-link-system-path="node/63598"><span class="primary-nav__menu-link-inner">Articles</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/about/newsroom" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Newsroom" data-section="header:tertiary-link" data-drupal-link-system-path="node/62143"><span class="primary-nav__menu-link-inner">Newsroom</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-3">
+                              
+                      <a href="/learn/whitepapers" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-3" data-value="Whitepapers" data-section="header:tertiary-link" data-drupal-link-system-path="node/62088"><span class="primary-nav__menu-link-inner">Whitepapers</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/developer" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Developer Program" data-section="header:primary-sublink" data-drupal-link-system-path="node/63292"><span class="primary-nav__menu-link-inner">Developer Program</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-1 primary-nav__menu-item--has-children">
+                              
+                      <a href="/partners" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-1 primary-nav__menu-link--has-children" data-value="Partners" data-section="header:primary-link" data-drupal-link-system-path="node/63211"><span class="primary-nav__menu-link-inner">Partners</span></a>
+
+                                        <button class="primary-nav__button-toggle" aria-controls="partners-submenu-5" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Toggle sub-navigation</span>
+                <span class="icon--menu-toggle"></span>
+              </button>
+
+                                      <ul  class="menu primary-nav__menu menu--main__v1 primary-nav__menu--level-2" id="partners-submenu-5">
+            
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/partners/search" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Find a Partner" data-section="header:primary-sublink" data-drupal-link-system-path="node/63526"><span class="primary-nav__menu-link-inner">Find a Partner</span></a>
+
+            
+                  </li>
+      
+                          
+        
+        
+                                          
+        
+        <li class="primary-nav__menu-item primary-nav__menu-item--link primary-nav__menu-item--level-2">
+                              
+                      <a href="/partners/become" class="primary-nav__menu-link primary-nav__menu-link--link primary-nav__menu-link--level-2" data-value="Become a Partner" data-section="header:primary-sublink" data-drupal-link-system-path="node/63212"><span class="primary-nav__menu-link-inner">Become a Partner</span></a>
+
+            
+                  </li>
+          </ul>
+  
+            
+                  </li>
+          </ul>
+  
+
+
+  </div>
+
+
+            </div>
+                      </div>
+                          </div>
+                <div class="global-header__secondary-nav">
+                        <div id="block-tableau-menu-secondary-nav">
+  
+  
+      <div data-embeddable-id="526" class="embeddable">
+  
+
+
+
+
+
+
+      <div class="">
+    <nav id="tableau-menu-secondary-nav" role="navigation">
+  <ul class="global-header__secondary-menu">
+    <li class="global-header__secondary-item"><a class="global-header__secondary-link user-vary-link user-anonymous-show user-guest-show" href="/pricing/">Pricing</a></li>
+    <li class="global-header__secondary-item"><a class="global-header__secondary-link user-vary-link user-anonymous-show" href="/tableau-login-hub">Sign In</a></li>
+    <li class="global-header__secondary-item"><a class="global-header__secondary-link user-vary-link user-guest-show" href="/user/account-convert">Create Account</a></li>
+    <li class="global-header__secondary-item"><a class="global-header__myaccount-link text--dark-body user-vary-link user-customer-show user-partner-show user-authenticated-show" href="/my-account"><span class="my-account-name"></span></a></li>
+    <li class="global-header__secondary-item"><a class="global-header__search-toggle" href="/search/all/try%2Btableau">Search</a></li>
+  </ul>
+  <ul class="global-header__secondary-menu-ctas" data-lytics-audience-vary="webstore_customer">
+    <li class="global-header__secondary-item" data-lytics-audience-hide="webstore_customer" data-menu-personalize="hide" data-lytics-display="inline-block"><a class="cta global-header__secondary-cta user-vary-link user-anonymous-show user-guest-show user-authenticated-show section-vary-link section-academic-hide" href="/products/trial">Try Now</a></li>
+    <li class="global-header__secondary-item" data-lytics-audience-hide="webstore_customer" data-menu-personalize="hide" data-lytics-display="inline-block"><a class="cta cta--secondary cta--buy-now global-header__secondary-cta user-vary-link user-anonymous-show section-vary-link section-academic-hide" href="https://buy.tableau.com/">Buy Now</a></li>
+    <li class="global-header__secondary-item" data-lytics-audience-show="webstore_customer" data-lytics-display="inline-block"><a class="cta cta--buy-now global-header__secondary-cta section-academic-hide" href="https://buy.tableau.com/add-on?source=globalheader">Buy More Licenses</a></li>
+    <li class="global-header__secondary-item" data-lytics-audience-hide="webstore_customer" data-lytics-display="inline-block"><a class="cta cta--dark global-header__secondary-cta user-vary-link user-customer-show section-vary-link section-academic-hide" href="/learn/training">Free Training</a></li>
+    <li class="global-header__secondary-item" data-lytics-audience-hide="webstore_customer" data-lytics-display="inline-block"><a class="cta cta--dark global-header__secondary-cta user-vary-link user-partner-show" href="/prc/home">Partner Portal</a></li>
+    <li class="global-header__secondary-item"><a class="cta cta--dark global-header__secondary-cta section-vary-link section-academic-show" href="/academic/students#form">Free Student License</a></li>
+    <li class="global-header__secondary-item" data-lytics-audience-hide="webstore_customer" data-menu-personalize="show" data-lytics-display="inline-block"><a class="cta global-header__secondary-cta user-vary-link user-anonymous-show user-guest-show user-authenticated-show section-vary-link section-academic-hide" href="/about/contact/global-sales">Contact Sales</a></li>
+    <li class="global-header__secondary-item" data-lytics-audience-hide="webstore_customer" data-menu-personalize="show" data-lytics-display="inline-block"><a class="cta cta--secondary global-header__secondary-cta user-vary-link user-anonymous-show user-guest-show user-authenticated-show section-vary-link section-academic-hide" href="/products/trial">Try Now</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </div>
+
+  </div>
+<div id="block-tableau-coveo-global" class="global-header__search-wrapper">
+  <div class="global-header__search">
+    
+    
+    
+
+
+
+
+
+
+      <div class="">
+    <div>  
+  
+  
+  
+
+
+<div class="coveo-search-box" data-tab-group="global">
+  <div class="CoveoAnalytics" data-search-hub=Tableau.comMain></div>
+    <div class="CoveoSearchbox" data-auto-focus="false" data-placeholder="Search" data-query-suggest-character-threshold="2"></div>
+
+  </div>
+
+</div>
+
+
+    </div>
+  
+    <button class="global-header__search-close"><span class="sr-only">Cancel Search</span></button>
+  </div>
+</div>
+
+
+                  </div>
+                      </nav>
+    </header>
+  
+                <main class="main-content flex-grow">
+                  <div id="main-content">
+          <div data-drupal-messages-fallback class="hidden"></div><div id="block-tableau-page-content">
+  
+  
+      
+
+
+
+  <section about="/404" typeof="schema:WebPage" class="node node--page node--view-mode-full clearfix">
+        
+          <span property="schema:name" content="We couldn&#039;t find the page you were looking for." class="hidden"></span>
+
+        
+    <article>
+                    
+
+
+
+
+
+
+            <div class="field field--name-field-page-sections field--node field--label-hidden">
+              <div>
+
+
+
+
+
+
+      <section id = "paragraph-id--179508"   class="section entity entity-paragraphs-item paragraph paragraph--type--text-passage paragraph--view-mode--default"
+    >
+      <article  class="content content-container content-container--narrow">
+              
+                    
+                          
+
+
+
+
+
+
+      <div class="">
+    <div class="grid--5 grid-5 alpha">
+  <h2>The page you were looking for does not exist.</h2><h4> Sasquatch, on the other hand, just might.</h2>
+  <span>Not looking for Sasquatch? Try this:</span>
+  <ul>
+    <li>If you typed in a URL, double-check the spelling.</li>
+    <li>If you clicked a link and found this page instead, please report the issue on our <a href="/having-trouble#website-feedback">Having Trouble</a> Page.</li>
+  </ul>
+</div>
+<div class="grid--7 grid-7 omega centered grid--last text--centered">
+  <a href="https://public.tableau.com/shared/68X9BKW3X?:showVizHome=no" target="_blank"><img loading="lazy" src="https://cdnl.tblsft.com/sites/default/files/pages/sasquatch.png" alt="Sasquatch packed bubble"/></a>
+  <p><a href="https://public.tableau.com/shared/68X9BKW3X?:showVizHome=no" target="_blank">Sasquatch sightings</a></p>
+</div>
+
+
+
+
+<style>
+/* Hide the misleading add redirect link which creates a redirect from the 404 page */
+.add_redirect {display: none;}
+</style>
+    </div>
+  
+            </article>
+    </section>
+  
+        
+  </div>
+            </div>
+      
+
+                                            </article>
+  </section>
+
+  
+
+  </div>
+
+
+      </div>
+    </main>
+              <footer id="footer" class="flex-shrink">
+                      <div data-is-footer-cta="true" id="block-tableau-footer-cta">
+  
+  
+      <div data-embeddable-id="415" class="embeddable">
+  
+  
+
+
+
+
+
+
+      <div class="">
+    <section class="section entity entity-paragraphs-item paragraph paragraph--type--text-passage paragraph--view-mode--default bg-cover datalocation-prefooter-cta-banner" style="background-image: url(/sites/default/files/2022-11/Embeddable_TryBuy_Background_0.png);"><article class="content content-container"><div>
+<div class="content content-container content-container--narrow">
+<div class="clearfix text--centered">
+<hr class="spacer spacer--one mobile-hide" /><h2 class="text--benton-bold">Succeed now with the tools you need to make data actionable.</h2>
+<ul class="link-list link-list--inline "><li class="active">
+<p><a class="cta" href="/products/trial">Try Tableau for Free</a></p>
+</li>
+<li class="active">
+<p><a class="cta cta--secondary" href="https://buy.tableau.com" target="_blank">Buy Tableau Today</a></p>
+</li>
+</ul></div>
+</div>
+</div>
+</article></section>
+    </div>
+  </div>
+
+
+  </div>
+
+
+            <div class="global-footer section section--padded-two bg--dark-gray-3">
+       <nav class="content-container content-container--wide" aria-label="additional">
+          <div class="global-footer__first clearfix">
+              <div class="language-switcher-language-url" id="block-tableau-language-switcher">
+  
+  
+      
+<div class="global-footer__language">
+    <a id="lang-dropdown" class="anchor-link"></a>
+    <span class="selected">English (US)</span>
+    <ul class="links language-switcher-locale-url global-footer__language__options plain-list"><li hreflang="en-US" data-drupal-link-system-path="node/62476" class="en-us"><a href="/404" class="language-link" hreflang="en-US" data-drupal-link-system-path="node/62476">English (US)</a></li><li hreflang="de-DE" data-drupal-link-system-path="node/62476" class="de-de"><a href="/de-de/404" class="language-link" hreflang="de-DE" data-drupal-link-system-path="node/62476">Deutsch</a></li><li hreflang="en-GB" data-drupal-link-system-path="node/62476" class="en-gb"><a href="/en-gb/404" class="language-link" hreflang="en-GB" data-drupal-link-system-path="node/62476">English (UK)</a></li><li hreflang="es-ES" data-drupal-link-system-path="node/62476" class="es-es"><a href="/es-es/404" class="language-link" hreflang="es-ES" data-drupal-link-system-path="node/62476">Español</a></li><li hreflang="fr-CA" data-drupal-link-system-path="node/62476" class="fr-ca"><a href="/fr-ca/404" class="language-link" hreflang="fr-CA" data-drupal-link-system-path="node/62476">Français (Canada)</a></li><li hreflang="fr-FR" data-drupal-link-system-path="node/62476" class="fr-fr"><a href="/fr-fr/404" class="language-link" hreflang="fr-FR" data-drupal-link-system-path="node/62476">Français (France)</a></li><li hreflang="it-IT" data-drupal-link-system-path="node/62476" class="it-it"><a href="/it-it/404" class="language-link" hreflang="it-IT" data-drupal-link-system-path="node/62476">Italiano</a></li><li hreflang="ja-JP" data-drupal-link-system-path="node/62476" class="ja-jp"><a href="/ja-jp/404" class="language-link" hreflang="ja-JP" data-drupal-link-system-path="node/62476">日本語</a></li><li hreflang="ko-KR" data-drupal-link-system-path="node/62476" class="ko-kr"><a href="/ko-kr/404" class="language-link" hreflang="ko-KR" data-drupal-link-system-path="node/62476">한국어</a></li><li hreflang="nl-NL" data-drupal-link-system-path="node/62476" class="nl-nl"><a href="/nl-nl/404" class="language-link" hreflang="nl-NL" data-drupal-link-system-path="node/62476">Nederlands</a></li><li hreflang="pt-BR" data-drupal-link-system-path="node/62476" class="pt-br"><a href="/pt-br/404" class="language-link" hreflang="pt-BR" data-drupal-link-system-path="node/62476">Português</a></li><li hreflang="sv-SE" data-drupal-link-system-path="node/62476" class="sv-se"><a href="/sv-se/404" class="language-link" hreflang="sv-SE" data-drupal-link-system-path="node/62476">Svenska</a></li><li hreflang="th-TH" data-drupal-link-system-path="node/62476" class="th-th"><a href="/th-th/404" class="language-link" hreflang="th-TH" data-drupal-link-system-path="node/62476">ไทย</a></li><li hreflang="zh-Hans-CN" data-drupal-link-system-path="node/62476" class="zh-hans-cn"><a href="/zh-cn/404" class="language-link" hreflang="zh-Hans-CN" data-drupal-link-system-path="node/62476">简体中文</a></li><li hreflang="zh-Hant-TW" data-drupal-link-system-path="node/62476" class="zh-hant-tw"><a href="/zh-tw/404" class="language-link" hreflang="zh-Hant-TW" data-drupal-link-system-path="node/62476">繁體中文</a></li></ul>
+  </div>
+  </div>
+<div data-menu-name="footer" id="block-tableau-footer-menu" class="global-footer__menu">
+  
+  
+      
+
+      
+                    <ul class="link-list link-list--inline">
+                <li>
+    <a href="https://trust.tableau.com" data-value="System Status">System Status</a>
+
+      </li>
+
+        <li>
+    <a href="/blog" data-value="Blog" data-drupal-link-system-path="node/94953">Blog</a>
+
+      </li>
+
+        <li>
+    <a href="/developer" data-value="Developer" data-drupal-link-system-path="node/63292">Developer</a>
+
+      </li>
+
+        <li>
+    <a href="/about/careers" data-value="Careers" data-drupal-link-system-path="node/63464">Careers</a>
+
+      </li>
+
+        <li>
+    <a href="/about/contact" data-value="Contact Us" data-drupal-link-system-path="node/63501">Contact Us</a>
+
+      </li>
+
+  
+
+  </ul>
+
+
+  
+
+  </div>
+<div data-menu-name="footer-secondary" id="block-tableau-footer-secondary-menu" class="global-footer__links">
+  
+  
+      
+
+      
+              
+      <ul class="link-list link-list--inline">
+                <li>
+    <a href="/legal" data-value="Legal" data-drupal-link-system-path="node/62372">Legal</a>
+
+      </li>
+
+        <li>
+    <a href="https://www.salesforce.com/company/privacy/" target="_blank" data-value="Privacy">Privacy</a>
+
+      </li>
+
+        <li>
+    <a href="https://kb.tableau.com/articles/howto/completely-removing-tableau-desktop" data-value="Uninstall">Uninstall</a>
+
+      </li>
+
+        <li>
+    <a href="/do-not-sell-my-personal-information" class="optanon-toggle-display" data-value="Cookie Preferences" data-drupal-link-system-path="node/63602" data-ignore-geolocation="true" onclick="return !window.OneTrust">Cookie Preferences</a>
+
+      </li>
+
+  
+
+  </ul>
+
+
+  
+
+  </div>
+
+
+         </div>
+          <div class="global-footer__second clearfix">
+             <div id="block-tableau-social-media-links" class="global-footer__social">
+  
+  
+  
+
+
+
+
+
+
+      <div class="">
+    <ul class="link-list link-list--inline "><li>
+        <a data-name="social-interact" data-location="linkedin" href="https://www.linkedin.com/company/tableau-software" target="_blank" class=""><i class="icon icon--social-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+    </li>
+<li>
+        <a data-name="social-interact" data-location="facebook" href="https://www.facebook.com/Tableau/" target="_blank" class=""><i class="icon icon--social-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+    </li>
+<li>
+        <a data-name="social-interact" data-location="twitter" href="https://www.twitter.com/tableau" target="_blank" class=""><i class="icon icon--social-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+    </li>
+</ul>
+    </div>
+  
+</div>
+<div class="global-footer__copyright">
+    © 2003-2022 Tableau Software, LLC, a Salesforce Company. All Rights Reserved
+</div>
+
+
+         </div>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  </div>
+
+
+    <script>
+(function() {
+  try {
+    var storage = localStorage.jStorage;
+    var uuid = document.body.getAttribute('data-entity-uuid');
+    if (typeof storage === 'string' && storage && uuid && JSON.parse(storage)['premiumAccess.' + uuid]) {
+      document.body.className += ' has-premium-access';
+    }
+  }
+  catch (error) {
+    if (!error instanceof DOMException && window.NREUM) {
+      NREUM.noticeError(error);
+    }
+  }
+})();
+</script><script>
+(function () {
+  // How many milliseconds to wait for intellimize to load before timing out.
+  var intellimizeTimeout = 6000;
+
+  // Schedule and remove the intellimize-hide class.
+  setTimeout(intellimizeReady, intellimizeTimeout);
+
+  if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', intellimizeLoad, false);
+  }
+  else {
+    document.attachEvent('onDOMContentLoaded', intellimizeLoad);
+  }
+
+  // Call when Intellimize is done loading and ready, or after timing out.
+  function intellimizeReady() {
+    document.documentElement.className = document.documentElement.className.replace('intellimize-loading', '');
+  }
+
+  // Callback for DOMReady event.
+  function intellimizeLoad() {
+    // Asynchronously load the Intellimize script.
+    $.ajax({
+      dataType: 'script',
+      cache: true,
+      url: 'https://api.intellimize.co/client/117259316.js'
+    }).done(intellimizeReady);
+  }
+})();
+</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en-US"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"clientside_validation_jquery":{"validate_all_ajax_forms":2,"force_validate_on_blur":false,"messages":{"required":"This field is required.","remote":"Please fix this field.","email":"Please enter a valid email address.","url":"Please enter a valid URL.","date":"Please enter a valid date.","dateISO":"Please enter a valid date (ISO).","number":"Please enter a valid number.","digits":"Please enter only digits.","equalTo":"Please enter the same value again.","maxlength":"Please enter no more than {0} characters.","minlength":"Please enter at least {0} characters.","rangelength":"Please enter a value between {0} and {1} characters long.","range":"Please enter a value between {0} and {1}.","max":"Please enter a value less than or equal to {0}.","min":"Please enter a value greater than or equal to {0}.","step":"Please enter a multiple of {0}."}},"dataLayer":{"defaultLang":"en-US","languages":{"ar-EG":{"id":"ar-EG","name":"Arabic","direction":"rtl","weight":-16},"fr-CA":{"id":"fr-CA","name":"French, Canada","direction":"ltr","weight":-16},"pt-PT":{"id":"pt-PT","name":"Portuguese, Portugal","direction":"ltr","weight":-16},"zh-Hant-HK":{"id":"zh-Hant-HK","name":"Chinese, Hong Kong","direction":"ltr","weight":-15},"zh-Hans-CN":{"id":"zh-Hans-CN","name":"Chinese, Simplified","direction":"ltr","weight":-15},"ar-SA":{"id":"ar-SA","name":"Arabic, Saudi Arabia","direction":"rtl","weight":-14},"zh-Hant-TW":{"id":"zh-Hant-TW","name":"Chinese, Traditional","direction":"ltr","weight":-14},"en-US":{"id":"en-US","name":"English","direction":"ltr","weight":-14},"ar-AE":{"id":"ar-AE","name":"Arabic, United Arab Emerites","direction":"rtl","weight":-13},"cs-CZ":{"id":"cs-CZ","name":"Czech","direction":"ltr","weight":-13},"nl-NL":{"id":"nl-NL","name":"Dutch","direction":"ltr","weight":-12},"en-NZ":{"id":"en-NZ","name":"English, New Zealand","direction":"ltr","weight":-11},"en-GB":{"id":"en-GB","name":"English, United Kingdom","direction":"ltr","weight":-10},"en-ZA":{"id":"en-ZA","name":"English, South Africa","direction":"ltr","weight":-9},"fr-FR":{"id":"fr-FR","name":"French","direction":"ltr","weight":-8},"fi-FI":{"id":"fi-FI","name":"Finnish","direction":"ltr","weight":-7},"de-DE":{"id":"de-DE","name":"German","direction":"ltr","weight":-6},"es-MX":{"id":"es-MX","name":"Spanish, Mexico","direction":"ltr","weight":-6},"he-IL":{"id":"he-IL","name":"Hebrew","direction":"rtl","weight":-5},"it-IT":{"id":"it-IT","name":"Italian","direction":"ltr","weight":-4},"ja-JP":{"id":"ja-JP","name":"Japanese","direction":"ltr","weight":-3},"ko-KR":{"id":"ko-KR","name":"Korean","direction":"ltr","weight":-2},"pl-PL":{"id":"pl-PL","name":"Polish","direction":"ltr","weight":-1},"pt-BR":{"id":"pt-BR","name":"Portuguese, Brazil","direction":"ltr","weight":0},"ro-RO":{"id":"ro-RO","name":"Romanian","direction":"ltr","weight":1},"ru-RU":{"id":"ru-RU","name":"Russian","direction":"ltr","weight":2},"es-ES":{"id":"es-ES","name":"Spanish","direction":"ltr","weight":3},"sv-SE":{"id":"sv-SE","name":"Swedish","direction":"ltr","weight":4},"tr-TR":{"id":"tr-TR","name":"Turkish","direction":"ltr","weight":5},"vi-VN":{"id":"vi-VN","name":"Vietnamese","direction":"ltr","weight":6},"th-TH":{"id":"th-TH","name":"Thai","direction":"ltr","weight":7}}},"tableau6Sense":{"customerToken":"7de4a2f5ee5804353e4d7b724b9f2ef5","eventEndpoint":"b.6sc.co","epsilonKey":"80606f4ef9ec210a1976cc499eb5573ff4ff8e3b","timeout":10000,"cookieGroup":"3"},"tableauBrightcove":{"accountId":"3798483592001","defaultPlayerId":"default"},"tableauEloqua":{"siteId":"840","contact":{"enabled":true,"timeout":20000,"localStorage":{"enabled":true,"ttl":172800000}},"tracking":{"remoteUrl":"https:\/\/img.en25.com\/i\/elqCfg.min.js","firstPartyCookieHost":"clicks.tableau.com","timeout":20000}},"tableauGeolocation":{"apiBaseUrl":"https:\/\/api.ipstack.com\/","apiKey":"1efdb022030bd78427fb06ef041edab1","timeout":5000,"ttl":"86400000"},"tableauSite":{"products":{"hyper_api_version_dot":"0.0.16123","hyper_api_version_dash":"0-0-16123","tableau_bridge_version_dot":"20224.22.1108.1611","tableau_bridge_version_dash":"20224-22-1108-1611","tableau_catalog_version_dot":"0.0.0","tableau_catalog_version_dash":"0-0-0","tableau_data_management_add_on_version_dot":"0.0.0","tableau_data_management_add_on_version_dash":"0-0-0","tableau_desktop_version_dot":"2022.4","tableau_desktop_version_dash":"2022-4-0","tableau_mobile_version_dot":"0.0.0","tableau_mobile_version_dash":"0-0-0","tableau_online_version_dot":"2022.2","tableau_online_version_dash":"2022-2-0","tableau_prep_version_dot":"2022.4","tableau_prep_version_dash":"2022-4-0","tableau_prep_builder_version_dot":"0.0.0","tableau_prep_builder_version_dash":"0-0-0","tableau_prep_conductor_version_dot":"0.0.0","tableau_prep_conductor_version_dash":"0-0-0","tableau_public_version_dot":"2022.4","tableau_public_version_dash":"2022-4-0","tableau_reader_version_dot":"2022.4","tableau_reader_version_dash":"2022-4-0","tableau_server_version_dot":"2022.3.2","tableau_server_version_dash":"2022-3-2","tableau_server_management_version_dot":"2022.2.1","tableau_server_management_version_dash":"2022-2-1","tableau_advanced_management_version_dot":"2022.4","tableau_advanced_management_version_dash":"2022-4-0"},"entityType":"node","bundle":"page"},"tabia":{"logging":{"logLevel":5,"logDebug":false,"logDebugTrace":false},"storage":{"ttl":null},"tracking":{"gaTimeout":20000,"gaTrackerId":"UA-625217-46"}},"tableauMenuActiveTrail":{"menus":{"footer-secondary":"footer-secondary","footer":"footer","main":"main"},"menuPositionRules":{"main":[{"menu_name":"main","menu_link":"\/products","conditions":{"path_patterns":["\/products\/*","\/developer\/*","\/pricing\/*"]}},{"menu_name":"main","menu_link":"\/solutions","conditions":{"entity_bundles":["node:customer_story","node:solution","node:visualization","node:workbook"],"path_patterns":["\/solutions\/*"]}},{"menu_name":"main","menu_link":"\/resources","conditions":{"entity_bundles":["node:blog_post","node:training_free_live","taxonomy_term:training_free_live_types","node:event_in_person","node:event_user_group","node:product_driver","node:product_known_issue","node:series","node:training_paid","node:webinar_live","node:webinar_ondemand","node:whitepaper"],"path_patterns":["\/community\/*","\/learn\/*","\/support\/*"]}},{"menu_name":"main","menu_link":"\/partners","conditions":{"path_patterns":["\/partners\/*"]}}]}},"coveo":{"searchEndpoint":"https:\/\/platform.cloud.coveo.com\/rest\/search","initOptions":{"Facet":{"valueCaption":{"blog_post":"Blog Post\r","customer_story":"Customer Story\r","event_in_person":"Event\r","event_live_training":"Free Live Training\r","event_ondemand_training":"Free Training\r","event_paid_in_person":"Classroom Training\r","event_user_group":"User Group Event\r","live_webinar":"Live Webinar\r","page":"Resource\r","press_release":"Press Release\r","resource_page":"Resource\r","series":"Series\r","stories_topic_page":"Solution\r","visualization":"Visualization\r","webinar":"On-Demand Webinar\r","whitepaper":"Whitepaper\r","featured_speaker":"Person"}},"facet-products-version":{"customSort":["Current","Not Specified","Unspecified","Not version specific","2028.4","2028.3","2028.2","2028.1","2027.4","2027.3","2027.2","2027.1","2026.4","2026.3","2026.2","2026.1","2025.4","2025.3","2025.2","2025.1","2024.4","2024.3","2024.2","2024.1","2023.4","2023.3","2023.2","2023.1","2022.4","2022.3","2022.2","2022.1","2021.4","2021.3","2021.2","2021.1","2021.4","2021.3","2021.2","2021.1","2020.4","2020.3","2020.2","2020.1","2019.4","2019.3","2019.2","2019.1","2018.4","2018.3","2018.2","2018.1","11.9","11.8","11.7","11.6","11.5","11.4","11.3","11.2","11.1","11.0","10.9","10.8","10.7","10.6","10.5","10.4","10.3","10.2","10.1","10.0","9.9","9.8","9.7","9.6","9.5","9.4","9.3","9.2","9.1","9.0","8.9","8.8","8.7","8.6","8.5","8.4","8.3","8.2","8.1","8.0"]},"facet-support-version":{"customSort":["Current","Not Specified","Unspecified","Not version specific","2028.4","2028.3","2028.2","2028.1","2027.4","2027.3","2027.2","2027.1","2026.4","2026.3","2026.2","2026.1","2025.4","2025.3","2025.2","2025.1","2024.4","2024.3","2024.2","2024.1","2023.4","2023.3","2023.2","2023.1","2022.4","2022.3","2022.2","2022.1","2021.4","2021.3","2021.2","2021.1","2021.4","2021.3","2021.2","2021.1","2020.4","2020.3","2020.2","2020.1","2019.4","2019.3","2019.2","2019.1","2018.4","2018.3","2018.2","2018.1","11.9","11.8","11.7","11.6","11.5","11.4","11.3","11.2","11.1","11.0","10.9","10.8","10.7","10.6","10.5","10.4","10.3","10.2","10.1","10.0","9.9","9.8","9.7","9.6","9.5","9.4","9.3","9.2","9.1","9.0","8.9","8.8","8.7","8.6","8.5","8.4","8.3","8.2","8.1","8.0"]},"facet-learning-version":{"customSort":["Current","Not Specified","Unspecified","Not version specific","2028.4","2028.3","2028.2","2028.1","2027.4","2027.3","2027.2","2027.1","2026.4","2026.3","2026.2","2026.1","2025.4","2025.3","2025.2","2025.1","2024.4","2024.3","2024.2","2024.1","2023.4","2023.3","2023.2","2023.1","2022.4","2022.3","2022.2","2022.1","2021.4","2021.3","2021.2","2021.1","2021.4","2021.3","2021.2","2021.1","2020.4","2020.3","2020.2","2020.1","2019.4","2019.3","2019.2","2019.1","2018.4","2018.3","2018.2","2018.1","11.9","11.8","11.7","11.6","11.5","11.4","11.3","11.2","11.1","11.0","10.9","10.8","10.7","10.6","10.5","10.4","10.3","10.2","10.1","10.0","9.9","9.8","9.7","9.6","9.5","9.4","9.3","9.2","9.1","9.0","8.9","8.8","8.7","8.6","8.5","8.4","8.3","8.2","8.1","8.0"]},"SearchInterface":{"enableAutomaticResponsiveMode":"false","loadingAnimation":"false"}},"searchPagePath":"\/search","library":{"scriptPath":"\/libraries\/coveo\/js\/CoveoJsSearch.Lazy.min.js","version":"2.9159.6"},"gaTrackingEnabled":true},"coveoSearchBox":true,"user":{"uid":0,"permissionsHash":"0eca42ce282a0f656c2afbadb2624564713fdf82e01e9e05db879e4638dc9eec"}}</script>
+<script src="/sites/default/files/js/js_i_tDgZ6DA7DP7nkCG4xDbt_akegy5i1YAR_g8oEBtao.js"></script>
+<script src="https://style-assets.tableau.com/v7.0.5/js/shared.min.js"></script>
+<script src="https://style-assets.tableau.com/v7.0.5/js/scripts.min.js"></script>
+<script src="/sites/default/files/js/js_QxBa2j1sFGhF3KKb2yqb7PLO1TSwwhX_j9SLA9LHekE.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"608b2de9d6","applicationID":"303339355","transactionName":"YV1SZBRRDRZYBUdfWlgXcVMSWQwLFjp3REBGWVxsCF8HAGUlXFhBRFdcXANCPytWAlZgXFNPc18IRBEKVQpWRA8MTllVEQ==","queueTime":0,"applicationTime":121,"atts":"TRpRElxLHhg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
