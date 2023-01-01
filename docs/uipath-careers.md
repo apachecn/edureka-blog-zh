@@ -1,6 +1,6 @@
 # UiPath 职业生涯-了解如何在 RPA 中建立职业生涯
 
-> 原文[https://www.edureka.co/blog/uipath-careers/](https://www.edureka.co/blog/uipath-careers/)
+> 原文：<https://www.edureka.co/blog/uipath-careers/>
 
 在一个所有人都在谈论自动化，以及自动化如何改变世界动态的时代， [UiPath](https://www.edureka.co/blog/uipath-tutorial/) 在 **[机器人过程自动化](https://www.edureka.co/robotic-process-automation-training)** 领域发挥了关键作用。作为 RPA 市场的主要领导者，它增加了人们在日常工作中学习和使用 UiPath 的机会。在本文中，我们将讨论如何通过学习 UiPath 在 RPA 领域建立职业生涯。
 

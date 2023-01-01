@@ -1,6 +1,6 @@
 # 关于印度角色的 10 大数据科学家神话
 
-> 原文[https://www.edureka.co/blog/data-scientists-myths](https://www.edureka.co/blog/data-scientists-myths)
+> 原文：<https://www.edureka.co/blog/data-scientists-myths>
 
 [**数据科学**](https://www.edureka.co/masters-program/data-scientist-certification) 已经成为近期最具趋势的领域之一。它正以惊人的速度增长，对数据科学家的需求也在增长。数据科学家的角色是极其动态的；对他们来说，没有两天是一样的，这就是为什么它如此独特和令人兴奋。因为这是一个新领域，所以既兴奋又困惑。那么，让我们按照以下顺序来澄清那些数据科学家的神话:
 
